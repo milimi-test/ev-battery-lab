@@ -1,0 +1,66 @@
+{
+  "source": "Natural Earth 1:10m populated places, nvkelso/natural-earth-vector",
+  "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/",
+  "cities": [
+    {
+      "name": "Subotica",
+      "lon": 19.680028,
+      "lat": 46.070016,
+      "minZoom": 1
+    },
+    {
+      "name": "Novi Sad",
+      "lon": 19.849941,
+      "lat": 45.250376,
+      "minZoom": 1
+    },
+    {
+      "name": "Beograd",
+      "lon": 20.466045,
+      "lat": 44.820591,
+      "minZoom": 1
+    },
+    {
+      "name": "Kragujevac",
+      "lon": 20.920004,
+      "lat": 44.01996,
+      "minZoom": 1
+    },
+    {
+      "name": "Čačak",
+      "lon": 20.330118,
+      "lat": 43.889736,
+      "minZoom": 1
+    },
+    {
+      "name": "Niš",
+      "lon": 21.899996,
+      "lat": 43.330416,
+      "minZoom": 1
+    },
+    {
+      "name": "Priština",
+      "lon": 21.165984,
+      "lat": 42.66671,
+      "minZoom": 1
+    },
+    {
+      "name": "Zrenjanin",
+      "lon": 20.399468,
+      "lat": 45.378637,
+      "minZoom": 1.7
+    },
+    {
+      "name": "Prizren",
+      "lon": 20.750092,
+      "lat": 42.22932,
+      "minZoom": 1.7
+    },
+    {
+      "name": "Peć",
+      "lon": 20.310739,
+      "lat": 42.660328,
+      "minZoom": 1.7
+    }
+  ]
+}

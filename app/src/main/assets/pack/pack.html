@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="sr-Latn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>e-208 · Mapa baterije</title><link rel="stylesheet" href="pack.css"></head>
+<body>
+<main>
+ <header><div><div class="eyebrow">PEUGEOT e-208 / 50 kWh</div><h1>Baterija, izbliza<span>.</span></h1><p>18 modula · 108 mernih grupa · 216 ćelija</p></div><div class="viewer-actions"><a id="back" class="quiet" href="app://close" hidden>Nazad u aplikaciju ↗</a><a id="stop-exit" class="quiet stop-exit" aria-label="Zaustavi i izađi" title="Zaustavi i izađi" href="app://stop-and-exit" hidden>⏻</a></div><div id="source" class="status">Čeka očitavanje</div></header>
+ <div class="toolbar"><nav aria-label="Vrsta očitavanja"><button data-mode="0">Naponi</button><button data-mode="1">Temperature</button><button data-mode="2">SOH</button></nav><span class="hint">Izaberi modul na slici ili njegovu karticu</span></div>
+ <section id="summary" class="summary" aria-label="Baterija u celini"></section>
+ <section class="map-panel" id="pack-map">
+  <div class="panel-heading"><div><span class="eyebrow">STVARNI RASPORED</span><h2>Tvoje označene pozicije</h2></div><div class="zoom"><button id="less" aria-label="Umanji sliku">−</button><button id="reset">Cela slika</button><button id="more" aria-label="Uvećaj sliku">+</button><button id="fullscreen" aria-label="Prikaz preko celog ekrana">⛶</button></div></div>
+  <p class="map-help">Uvećaj za očitavanja · sve vrednosti su i ispod slike</p>
+  <div id="viewport"><svg id="diagram" viewBox="0 0 1200 850" role="group" aria-label="Originalna šasija sa 18 označenih modula"></svg></div>
+  <div class="map-footer"><span><i></i> Originalna fotografija · tvoje tačke su sačuvane</span><span>M08 ispod M17 · M09 ispod M10</span></div>
+ </section>
+ <div class="mapping-note"><strong>M ↔ B*</strong><span>Vrednosti su iz rednih BMS blokova B01–B18. Prikaz uz istoimeni modul je <b>radno povezivanje</b>; veza dijagnostičkih indeksa sa fizičkim položajem nije potvrđena.</span></div>
+ <section id="mobile-modules" aria-label="Izbor modula i očitavanja"></section>
+ <section id="detail" class="detail-panel">
+  <div class="panel-heading"><div><span class="eyebrow">IZABRANI MODUL</span><h2 id="detail-title">Modul 01</h2></div><div class="steps"><a class="quiet" href="#pack-map">↑ Mapa</a><button id="previous" aria-label="Prethodni modul">←</button><button id="next" aria-label="Sledeći modul">→</button></div></div>
+  <div class="detail-grid"><figure class="module-photo"><div class="photo-controls"><button data-photo="module-real.jpg">Iz ugla</button><button data-photo="module-top.jpg">Odozgo · 12 ćelija</button></div><img id="module-photo" src="module-real.jpg" alt="Stvarni Stellantis 6s2p baterijski modul"><figcaption id="photo-caption">Stvarni Stellantis 6s2p modul sa otkrivenim priključcima 12 ćelija. Tela ćelija su unutar kućišta.</figcaption><a id="photo-source" href="https://evshop.eu/en/battery-module/1744-6s2p-stellantis-battery-module.html" target="_blank" rel="noopener">Izvor fotografije: EVShop ↗</a></figure><div><div id="module-metrics" class="metrics"></div><div id="probes" class="probes"></div><p class="small">Tri očitane sonde prikazane su po rednom BMS bloku. Njihova pojedinačna fizička mesta nisu utvrđena.</p></div></div>
+  <div class="section-title"><h3>Ćelije i merne grupe</h3><span id="group-range"></span></div>
+  <p class="small">12 fizičkih ćelija u 6 paralelnih parova (6s2p). BMS očitava jedan napon i SOH za svaki par. Kartice ispod prikazuju električni redosled, a ne potvrđena mesta ćelija na fotografiji.</p>
+  <div id="cells" class="cells"></div>
+  <div class="detail-footer"><span id="weakest"></span><span>SOH je BMS procena zdravlja, nije SOC.</span></div>
+ </section>
+ <section class="components"><div class="section-title"><h2>Temperature vozila</h2><span>Jedan pregled svih dostupnih senzora</span></div><div id="thermal" class="thermal-grid"></div><p class="small">„Baterija · BMS prosek” je temperatura baterije. Posebna temperatura BMS elektronike ili samog hladnjaka nije dostupna u potvrđenim očitavanjima.</p></section>
+ <footer>e-208 Battery Lab <span>Originalna geometrija · stvarna očitavanja · bez izmišljenih vrednosti</span><a id="edit" href="/edit">Uredi svoje pozicije ↗</a></footer>
+</main><script src="positions.js"></script><script src="pack.js"></script><script src="i18n.js"></script></body></html>

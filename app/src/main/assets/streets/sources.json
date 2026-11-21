@@ -1,0 +1,26 @@
+{
+  "source": "OpenStreetMap contributors / Geofabrik",
+  "license": "ODbL 1.0",
+  "extracts": {
+    "albania.pbf": 126290,
+    "bosnia-herzegovina.pbf": 193264,
+    "bulgaria.pbf": 192336,
+    "croatia.pbf": 51089,
+    "greece.pbf": 186095,
+    "hungary.pbf": 442207,
+    "kosovo.pbf": 97242,
+    "macedonia.pbf": 70362,
+    "montenegro.pbf": 57382,
+    "romania.pbf": 310667,
+    "serbia.pbf": 392841
+  },
+  "ways": 2119775,
+  "tiles": 933,
+  "bounds": [
+    17,
+    40,
+    25,
+    48
+  ],
+  "tile_degrees": 0.25
+}

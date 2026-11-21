@@ -1,0 +1,21 @@
+[
+  {
+    "id": "example:replace-me",
+    "name": "EXAMPLE — replace with a real charger",
+    "lat": 44.0,
+    "lon": 20.0,
+    "operator": "Operator name",
+    "sockets": "Type 2",
+    "kind": "ac",
+    "powerKw": 22.0,
+    "fee": "unknown",
+    "price": "",
+    "address": "Verified address",
+    "access": "yes",
+    "hours": "",
+    "checked": "2026-11-18",
+    "sourceLabel": "Operator source",
+    "sourceUrl": "https://example.com/replace-with-real-source",
+    "notes": "Replace this example with verified information."
+  }
+]

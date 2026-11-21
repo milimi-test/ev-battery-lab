@@ -1,0 +1,875 @@
+0	\n\nEstimate based on recorded consumption, terrain and available wind forecasts. AC limit: e-CMP 11 kW, Zoe 22 kW (conservative for Q motors). DC time includes an approximate charging taper. Waiting for an available connector is not included.
+1	\nCopernicus GLO-90 terrain model. Bridges and tunnels may differ.
+2	\nBaseline {0} kWh/100 km. Assumed mass: 1,650 kg, with approximate downhill energy recovery.
+3	\nMeasured {0}
+4	 (assumed power)
+7	 During the same interval, {0} without a trip recording.
+17	 m ASL
+19	 metres
+22	 · no data
+23	 · arrival {0}%
+24	 · arrival ≈ {0}%
+25	 · arrival ≈ {0}% (below the {1}% reserve)
+26	 · charging needed before the destination
+27	 · saved reading
+28	 · arrival SOC requires battery charge and capacity
+30	 • in progress
+31	 • {0} without a trip recording
+56	* M↔B is a provisional assignment by index. Your physical positions are saved; their relationship to diagnostic indices is not confirmed.
+57	, scale bar 
+58	, roads and places loaded
+59	, loading roads and places
+67	1. Wait for cell readings while parked. 2. Record a drive. 3. Charge in one session with a SOC change of at least 10%. 4. Export the ZIP for detailed analysis.
+68	108 series groups • example
+69	12 V battery
+73	18 MODULES · YOUR MARKED POSITIONS
+79	22 kWh · phase 1
+91	41 kWh · phase 1
+92	41 kWh · phase 1 · before facelift
+93	41 kWh · phase 2 · facelift from 2019
+95	50 kWh · before the 54 kWh battery
+96	50 kWh · original e-CMP battery
+97	52 kWh · phase 2
+102	7.4 kW
+108	96 groups · vehicle SOC
+123	AC and DC describe recorded charging sessions. Each session is counted once. If the charger type cannot be identified reliably, it remains unknown. A SOC rise during a recording gap suggests additional charging. These counters cover this app's saved history, up to 500 sessions. Deleting history also clears these counters.
+124	ANALYSIS
+147	The adapter does not support ISO-TP flow control for cells (ATFC).
+148	The adapter does not support long replies for cell voltages and probes.
+149	Adapter ready • waiting for vehicle response
+150	Battery analysis
+151	Android rejected the location request
+152	Android did not allow the location service; open the app and check GPS
+153	Android did not confirm deletion of saved summaries.
+155	Arithmetic mean of the available values in this card. The unit identifies the parameter: voltage in V, SOH in percent and temperature in °C.
+156	Motorway · orange    Main road · yellow    Border · light blue
+157	Automatic battery analysis
+158	Automatic sessions from actual BMS readings.
+159	Automatic capacity test • {0}
+160	Automatic connection
+161	BATTERY
+164	BMS counters D42E
+165	BMS energy
+166	BMS energy (kWh)
+167	BMS energy is the remaining-energy estimate returned by the vehicle (D865 on e-CMP). Lifetime energy counters are separate readings. Energy into the battery includes regeneration, while the charger meter entry includes charging losses.
+168	The BMS may stop responding while charging. SOC before and after will be compared when the vehicle reconnects.
+169	The BMS is not returning basic data
+170	BMS reading
+171	The BMS estimates remaining battery energy. Integrating measured V × I gives energy over intervals with available voltage and current. Negative power indicates charging. Grid energy can be entered from the charger meter.
+172	BMS distance
+174	BMS summaries
+175	Reading BMS{0}
+176	BMS · electrical parameters
+177	Battery
+178	Battery (BMS average)
+179	Battery V×I: {0} • coverage {1}
+180	Battery and consumption
+181	Battery max
+182	Battery min
+183	Battery · average
+184	Battery · image and modules
+186	Free energy according to the source
+187	Free
+188	No confirmed ECU readings
+191	Alternative Bluetooth connection
+192	Bluetooth permission was not granted
+193	Bluetooth is off; retrying
+194	Bluetooth connected • initialising adapter
+195	Secure Bluetooth connection
+197	Route colour shows relative GPS altitude during this trip; grey indicates points without altitude. GPS gaps are not connected.
+198	Deletion did not finish. {0}
+199	Deleting history…
+200	Group count
+201	Charging count
+202	Probe numbers 1–54 are not physical module positions.
+203	Recorded sessions with a connected cable and input power above 12 kW. The e-CMP onboard charger accepts up to 11 kW AC. Once identified, DC type is retained when power falls. Slow DC charging without confirming data remains unknown. This counter covers sessions recorded by this app; other vehicle profiles may not provide these signals.
+204	Recorded sessions with energy flowing into the battery and a fresh onboard-charger mains-voltage reading. Type is identified during charging. Older history and charging without vehicle responses may have an unknown type.
+205	The input counter includes regeneration; it is not a grid meter or charger-only energy. 
+206	Gross energy used
+207	Speed
+208	Speed reported by the phone GPS, shown for a recent location with acceptable accuracy. It may briefly differ from vehicle-reported speed.
+209	Vehicle-controller speed read over OBD. Phone GPS speed is recorded separately when location is available.
+210	Vehicle speed
+211	Speed ↔ driving consumption
+212	Fast · DC
+214	DESTINATION
+217	Price not published
+218	Check pricing, opening hours and parking terms with the operator. Green indicates free energy according to the source; blue means paid or unknown pricing.
+219	Full chart
+220	Chen et al. (2020), JES 167 080534, Table VIII; PyBaMM Chen2020. 
+221	Cycle: {0}
+222	Target already reached ({0}%).
+223	Target SOC: {0}%
+231	D42E: energy counters were not refreshed.
+232	D42E: invalid energy counters; showing the last valid readings.
+238	D43D/D822: additional BMS data not received.
+255	D862/D863/D413: alternative BMS scales not received.
+272	DEMO • examples, not vehicle data
+273	DIAGNOSTICS
+275	Reading and clearing DTCs requires a verified vehicle protocol.
+276	Distance today
+277	Recorded today
+278	Trips today
+279	Source data date: {0}
+280	Sharing failed: {0}
+281	The detailed map appears when the BMS returns probe temperatures.
+282	Detailed parameters
+283	Diagnostics
+284	This chart analyses trips recorded in October and November 2026. Left: your measurements and two points from another e-208 AVILOO test. Right: reference LG M50, CALB NMC532 and NMC622 curves, plus one Entroview ECMP125P0M5 module point.
+285	Voltage and SOC chart. Pinch to zoom and drag to pan.
+286	Daily BMS summaries will start with the next connection.
+287	Daily and long-term
+288	No connected route to this point in Serbia's offline road network. Tap a nearby public road.
+289	Add a charging stop
+290	Add charger to route
+291	Additional vehicle readings
+292	Additional BMS scales\nD862 {0} % · D863 {1} % · D413 {2} %\nTheir exact meaning is not yet confirmed.
+293	Additional SOC rises during gaps
+294	Additional driving signals
+295	Tap or drag horizontally for exact values.
+296	Tap the profile line for distance and altitude at the selected point. Yellow markers indicate planned charging stops.\n\nThe profile uses the offline Copernicus GLO-90 terrain model, sampling the route every 200 m. This is ground elevation; bridges and tunnels may differ. Model gaps are not connected. Ascent and descent use filtered altitude changes.
+297	Tap the map to estimate a trip to a destination.
+298	Arrival below the {0}% reserve.
+299	Range
+300	Road range uses your measured consumption. The dashboard uses its own model, usually without the selected reserve. Neither estimate guarantees achievable range.
+301	Charging stop
+302	Charge to {0}% · +{1} kWh · ≈ {2} min
+303	Charging needs SOC, capacity and a compatible connector. Zoe DC requires ZE50 and CCS equipment confirmed on the home screen.
+304	Charge to {0}%
+305	The {0}% reserve has been reached.
+306	Signal availability depends on the ECU and adapter. New profiles use published protocols and have not been tested on every physical vehicle. Stellantis 54 kWh variants are not included. CCS is optional on Zoe ZE50.
+307	Allow screen sleep; tap to keep it on
+308	Allow precise GPS
+309	Long-term battery health
+310	ELM initialisation
+311	ELM does not support command {0}
+312	ELM did not restore the BMS address after {0}
+313	Economical pace · {0}. Follow signs and road conditions.
+314	Screen stays on; tap to allow sleep
+315	Energy
+316	Energy from battery
+317	Energy shown by charger
+318	Energy uses recorded consumption, terrain and available wind forecasts. The model assumes a mass of 1,650 kg and approximate downhill energy recovery. AC limit is 11 kW for e-CMP and 22 kW for Zoe; DC time includes an approximate charging taper. Waiting for an available charger is not included.\n\n
+319	Charger energy (kWh)
+320	Energy is calculated by integrating battery power V × I over time. Negative power while driving indicates regeneration. Intervals up to 60 s between readings are included. Energy during longer gaps is unknown.
+321	Energy is calculated by integrating battery power over time. Gross use adds discharge, recovered energy adds regeneration, and net energy is their difference. Gaps between readings can reduce calculation coverage.
+322	Energy into battery
+323	Energy ≈ {0} kWh
+324	Recorded and estimated
+325	The manufacturer's CATL curve for this vehicle's exact cell has not been confirmed. Absolute SOC and separate upper/lower buffers remain unknown. Range uses vehicle SOC.
+326	Vehicle photograph
+327	GPS TRACK
+328	GPS TRACK ALTITUDE
+329	GPS speed
+330	GPS idle • waiting for vehicle
+331	GPS idle • waiting for a trip
+332	GPS unregistered
+333	GPS coverage
+334	GPS enabled again; waiting for a fix
+335	GPS accuracy worse than 60 m; point not recorded
+336	GPS receiver unavailable
+337	GPS track: grey — altitude not recorded
+338	GPS registered; waiting for a new location
+339	GPS manually stopped
+340	GPS fix is not accurate enough
+341	GPS recorded
+342	GPS ready • waiting for movement
+343	GPS point not saved • check storage
+344	GPS points in memory
+345	GPS altitude
+346	GPS altitude (m)
+347	GPS altitude comes from the phone and depends on satellite reception accuracy. Map terrain elevation comes from Copernicus GLO-90. Bridges and tunnels may differ from the ground below them.
+348	GPS track altitude · {0} m
+349	GPS: {0}. The ZIP includes raw BMS readings and GPS CSV/GPX when available.
+350	CHARTS
+351	Geuder et al. (2024), Batteries 10(8), 275, Table 2, LP57 column; Sections 2.3 and 2.4.1.
+352	City, place or charger name
+353	The chart appears when the BMS returns all cell voltages.
+354	Approximate comparison with a laboratory 5.2 Ah NMC622 cell using LP57 electrolyte at 25 °C. Only four published C/10 discharge points, joined with straight lines.
+355	Group {0}
+356	Tyres • analysis context
+359	Charger HV voltage
+360	Cooler
+361	HISTORY
+362	SELECTED {0}
+363	Resting mean voltage interpolated onto the D862 scale; not confirmed gross SOC.
+364	Resting D862 interpolation {0} % · {1} anchors
+367	Turn recording off
+368	Same point.
+369	History and temporary exports  ·  {0}
+370	History deleted.
+371	Charging history
+372	From entered measurements • {0} series groups
+373	Choose OBD adapter
+374	Choose SOC model
+375	Choose adapter
+376	Select a SOC model point
+377	Select an elevation profile point
+378	Choose paired OBD adapter
+379	Choose vehicle
+380	Choose trip
+381	Choose an adapter, then tap Connect. After the first connection, reconnection is automatic.
+382	Choose signals • scroll the list
+383	Choose a recorded trip to compare speed and consumption.
+384	Choose a paired OBD adapter
+385	Choose a paired Vlink adapter in the app
+386	Selected {0} · choose an adapter and connect
+387	Selected {0}. Tap Connect.
+388	Selected
+389	Selected destination
+390	The model selection is saved and immediately changes the voltage estimate. Range uses vehicle SOC.
+391	Selection not saved. Try again.
+392	Selection is saved. Both rings and the route arrival warning use this reserve.
+393	Vehicle selection was not saved
+394	Measured V×I
+395	Contours
+396	Contours off
+397	Contours are available with terrain elevation.
+398	Contours are derived from the same offline elevation data. The prepared grid has a 1/512° spacing (about 150–220 m), so lines are not a detailed survey. The interval follows the zoom level. Hatched areas are outside available coverage, not zero elevation.
+399	Contours are visible with terrain
+400	Contours {0} m
+401	Contours {0} m · some data missing
+402	Contours {0} m · loading
+403	HV insulation
+404	Outside satellite coverage
+405	Export CSV
+406	Export measurements as ZIP
+407	Export measurements for analysis
+408	Source
+409	Photo source
+410	Source: {0}
+411	Source: {0}\nOffline catalogue updated on 15 Nov 2026.
+412	Source: {0}\n{1}
+413	Source: {0}. Positive power discharges the battery; negative power returns energy.
+414	Sources\nChen et al., JES 167 (2020) 080534 / PyBaMM Chen2020\narxiv.org/abs/2610.23049\ndoi.org/10.3390/batteries10080275\nentroview.com — Battery Certification Report, 19 May 2025.\nAVILOO — e-208 50 kWh, 8 Nov 2022.
+415	Export failed: {0}
+416	SE
+417	SW
+418	One fresh CALB cell, discharge branch; its SOC scale applies to that test's range. This does not identify the CATL cell, absolute vehicle SOC or buffer size.
+419	One fresh measurement per day; SOH is a BMS estimate, while cell spread depends on load and SOC.
+420	Cable
+421	How regeneration is calculated
+422	Capacity from two measurements: {0} kWh
+423	Capacity derived from a drive or charging session uses the change in energy and SOC. Small SOC changes increase error. Temperature, incomplete coverage and energy-reading reliability affect the estimate.
+424	Capacity {0} kWh • {1}. Power depends on the onboard charger and connection; it may drop near the end of charging.
+425	The catalogue has no confirmed Type 2, CCS2 or Schuko connector. Charging was not calculated.
+426	Charger catalogue unavailable.
+427	Distance
+428	Distance without a recorded trip
+429	Vehicle odometer
+430	Use GPS start
+431	End
+432	Selected model curve
+433	Voltage versus SOC curve: {0}
+434	Ring %.0f · return %.0f km
+435	Range rings
+436	Rings show straight-line distance. Details: ⓘ.
+438	Tailwind
+439	Licence
+440	Phone location is disabled
+441	Location is saved only during a detected trip.
+442	Phone location is off
+445	MCU: inverter temperature not received.
+447	MIN/MAX apply to the displayed interval. The cursor shows the nearest actual reading (within 30 s) and its time. Gaps longer than 60 s are not connected.
+448	Max speed
+449	Max charging
+450	Maximum
+451	Limited data: short trips and warm-up can significantly change the estimate.
+452	Map
+453	The Serbia map works offline. The track is added when a GPS trip is recorded.
+454	Battery map · temperatures
+455	Make, model, battery or motor
+456	Medina et al. (2026), Cell_4, original GITT data, CC BY 4.0. 
+457	Measurement storage
+458	Measurements for analysis
+459	Measurement
+460	Places
+461	Place not found in the offline catalogue.
+462	Min {0} · mean {1} · max {2} {3}
+463	Minimum
+464	A different cell's model, not a verified CATL curve for this vehicle. No compensation for temperature, load, hysteresis or ageing.
+465	The model has insufficient elevation data for this route.
+466	Model covers {0}% of route · gaps are not connected
+467	Terrain model 
+468	Time model
+472	Motor
+473	Motor · stator
+475	VOLTAGE
+476	RESUME AUTOMATIC RECORDING
+477	NMC532 / graphite
+478	NMC622 / graphite, LP57
+479	NMC622 · 4 C/10 points
+480	NMC811 / graphite–silicon
+481	Altitude
+482	Terrain elevation (m)
+483	Coldest
+484	Lowest
+485	Lowest / highest group
+486	Lowest group
+487	Lowest temp.
+488	The lowest value among readings in this card. The unit identifies voltage, SOH, temperature or another parameter.
+489	Lowest voltage among the measured battery series groups. The e-208 has 108 groups, each with two parallel cells. Brief voltage sag under load should be considered alongside current, temperature and SOC.
+490	Lowest cell voltage
+491	Most reliable after resting.
+492	Hottest
+493	Highest
+494	Highest group
+495	Highest temp.
+496	The highest value among readings in this card. Read it in the displayed unit and alongside the other values in the same card.
+497	Highest cell voltage
+498	Paid · check the operator app for pricing
+499	Reading notes
+500	Voltage
+501	Battery voltage
+502	Voltage comes from vehicle readings. Pack voltage is the sum of series groups; group voltage is shared by its parallel cells. Current and time since charging or driving affect the instantaneous value.
+503	Group voltage
+504	Group voltage (V)
+505	Voltage and SOC
+506	Voltage is outside the measured range; no extrapolation.
+507	Voltage is outside the selected model's measured range; no extrapolation.
+508	Pack voltage
+509	Pack voltage (V)
+510	Voltage versus vehicle SOC and reference curves. Tap to enlarge.
+511	Cell voltage • BMS
+512	108 cell voltages have not yet been received (D440).
+513	Group voltages: the previous cycle is older than 2 min.
+514	Voltage estimate unavailable: no fresh reading.
+515	Back to home
+516	Precise location permission is missing
+517	The complete D440 response for 108 cell voltages is missing.
+518	The complete D442 response for 54 temperatures is missing.
+519	The complete D4B5 response for cell health is missing.
+520	Three distinct resting D862 anchors are needed (≥15% and ≥0.04 V).
+521	Insufficient energy for this leg. Add an earlier charger.
+522	Invalid kWh amount
+523	No automatic session; this will be a standalone entry.
+524	No adapter selected
+525	No locations for this selection.
+526	No confirmed reading time
+527	No estimate
+528	No fresh location for more than 15 s
+529	No sample near cursor
+530	No elevation data
+531	No recorded trip
+532	Unknown error
+533	Net V×I
+534	Net energy
+535	Net consumption
+536	Net consumption (kWh/100 km)
+537	Not a resting OCV curve. Very coarse interpolation only from 5 to 100%; it does not show the detailed shape between points and is not a CATL calibration.
+538	Unable to save GPS point to phone storage
+539	Not connected
+540	Not connected
+541	Not plugged in
+543	New BMS measurement
+544	OBC HV output
+545	OBC temperature
+546	OBC · onboard charger
+547	No OBD response received
+548	No OBD response received: {0}
+549	OBD monitoring
+550	OBD interrupted
+551	OBD device
+552	OBD connection closed
+554	REFRESH
+555	OPEN MAP AND ELEVATION PROFILE
+556	OPEN MONITOR
+557	OPEN IMAGE WITH ALL VALUES ↗
+559	Normal · AC
+560	Explanation — {0}
+561	Delete measurement history?
+562	Delete history
+563	Delete measurement history
+564	Wind from
+565	D440 response contains invalid cell voltages.
+566	D442 response contains invalid temperatures.
+567	D4B5 response contains invalid cell SOH values.
+568	Grant Bluetooth permission
+569	Grant Bluetooth permission in the app
+570	Destination
+571	Cancel
+572	Separate
+573	Offline map, 
+576	Approximate estimate · another cell's reference curve.
+577	Approximate voltage estimate ({0}). Model: {1}. {2}
+582	Load is unknown.
+583	Original Peugeot e-208 chassis photograph; open the labelled map
+584	Illustrative rings allow a road distance 20% longer than straight-line distance. Return assumes the same conditions in both directions. Routing uses actual roads and terrain.
+585	Baseline 
+586	Charging measurement basis
+587	HV insulation resistance reported by the BMS, in kΩ. Assessing a fault requires measurement conditions and manufacturer diagnostics.
+588	Open data source
+589	Open trip map
+590	Open the app and check precise location
+591	Readings by index, without assumed physical module or probe positions.
+592	Distance this month
+593	Trips this month
+594	Measured voltage is outside the model range; no extrapolation.
+595	Measured {0}
+596	Measured {0} · {1}
+597	Reading 96 groups: {0}/96. A complete cycle takes several refreshes.
+598	Motor reading, separate from battery power V × I.
+599	SETTINGS
+600	COMPARE READINGS
+601	CONSUMPTION
+602	CONNECT AND START MONITORING
+603	HOME
+604	CHECK GPS AND PERMISSION
+605	CHARGING
+606	Precipitation
+607	Parameters ({0})
+609	Charging plan
+610	Plan using saved SOC · {0}
+611	Blue: average speed · orange: net kWh/100 km over the same segment.
+612	The blue ring is the one-way radius; the dashed yellow ring allows for the return trip. Their distances are straight-line distances. Selecting a destination calculates a road route.
+613	Based on ≥5 min of actual charging ({0} kW into battery): about {1} min
+614	No voltage estimate under load or while charging.
+615	The estimate may differ under load.
+616	Data and coverage
+617	Map data and coverage
+618	Map data
+619	Charger readings are older than 2 min.
+620	Settings
+621	Drivetrain · temperatures
+622	Drivetrain · live
+623	Individual groups
+624	Individual group SOH is not available in this protocol. Pack SOH is not assigned to individual cells.
+625	Covered distance
+626	Covered time
+627	Coverage
+628	Charging history coverage
+629	Power coverage
+630	Start selected. Tap a destination.
+631	Start from here
+632	Starting from the last GPS position {0}.
+633	Starting from a manually selected point
+634	Starting SOC {0}% · {1}
+635	Move time window
+636	Auxiliary battery
+637	A rise in the BMS remaining-energy estimate was recorded
+638	Another cell's reference curve. Not a CATL calibration for this vehicle.
+639	Reference prismatic CALB 58 Ah cell: 26 resting voltages measured during GITT discharge. Chamber 25 °C; cell 24.2–24.4 °C.
+640	Compare previous readings
+641	Comparison appears after a trip of at least 3 km with confirmed net energy.
+642	Latest
+643	Last battery reading
+644	Last battery reading {0}.
+645	Last reading · {0}
+646	Last probe temperatures are older than 2 min.
+647	Last cell voltages are older than 2 min.
+648	Last saved data · reading time under ⓘ.
+649	Precise location is required
+650	20 min of stable battery rest is required.
+651	GPS needs to be reactivated
+652	Required in battery ≈ {0} kWh
+653	Energy used (kWh)
+654	Consumption
+655	Consumption and arrival SOC · enough recorded trips are required.
+656	BMS consumption • selected trip
+657	Consumption is net energy used divided by distance and multiplied by 100. kWh/100 km is meaningful over a sufficiently long trip. Acceleration, speed, gradient, temperature and auxiliary loads affect the result. The calculation basis is shown for each trip.
+658	Connected
+659	Connected
+660	Connected • BMS read
+661	Vehicle connection
+662	Connecting to {0}...
+663	Connecting Bluetooth (1/2)
+664	Connecting Bluetooth (2/2)
+665	Connect
+666	Connect and start monitoring
+667	Connect the vehicle to prepare GPS automatically.
+668	Start
+669	Trip started; early points attached to trip
+670	Home
+671	Share measurements for analysis
+672	Monitoring stopped
+673	Monitoring stopped, but the auto-connect setting was not saved. Try again.
+674	Monitoring has not started
+675	Monitoring will stop. Recorded readings, trips, GPS tracks, charging sessions, manual entries and temporary ZIP files will be deleted. The last reading for calculations and settings are kept. Export a ZIP first if you need a backup.
+676	BMS before/after: {0} → {1} • SOC {2} → {3} %
+677	Precise location was not granted
+678	OBD response too long
+679	Disconnect OBD and GPS
+680	Overlay: each signal is scaled from 0 to 100% of its own range in this interval. Exact values are below.
+681	Overlay
+682	Overlay signals
+683	Remaining energy
+684	Remaining files: 
+685	Map search
+686	Search did not load. Close and reopen it.
+687	Searching…
+688	Swipe up for explanations and sources ↓
+689	Distance (km)
+690	At {0} kW and 90% efficiency: about {1} min
+691	Lowest group SOH in the block is shown.
+692	Lowest group voltage in the block is shown.
+693	Highest of the block's three probe temperatures is shown.
+694	The last counter reading is shown; it refreshes less often than live values.
+695	Show full map
+696	Show full route
+697	Show less
+698	Show all BMS and GPS signals
+699	Show all {0}
+700	Connections to road network · start {0} m, 
+701	Connectors are not listed in the catalogue.
+702	Connectors not listed
+703	Plugged in
+704	A connected cable does not confirm charging is currently active.
+705	Example individual groups
+706	Energy received (kWh)
+707	Access for site customers.
+708	Range estimate
+709	Range estimate · reserve {0}%
+710	Estimate uses 
+711	Remaining-energy estimate (D865)
+712	Route estimate
+713	The percentage is linearly interpolated between adjacent points of the selected model. Displayed voltage and percentage use the same reading. Outside the model range, a dash is shown.
+714	Estimated capacity: {0}
+715	Planned route profile
+716	Elevation profile
+717	The profile appears after GPS records at least two points with altitude.
+718	D865 estimate change
+719	SOC change
+720	Change in BMS remaining energy: {0} (separate indicator)
+721	Vehicle change failed: {0}
+722	Changing vehicle ends the OBD connection. Then connect the adapter in the selected vehicle. Check the phase for Zoe R110 ZE40: the 2019 facelift uses a different protocol. Select the fitted battery; registration year alone is insufficient.
+723	Route calculation
+724	Average
+725	Distance-weighted average %.1f kWh/100 km · %.0f km from %d trips
+726	Average battery temperature
+727	Check Bluetooth adapter
+728	Check numbers and units.
+729	First altitude
+730	Charger: readings not received.
+731	Charger: {0}
+732	Chargers
+733	Chargers at this location
+734	Charging
+735	Charging changes voltage.
+736	Charging • BMS
+737	Road route found. Calculation for this leg is unavailable.
+738	Track
+739	Track contains {0} gaps; GPS length is not the total trip distance.
+740	Recording track
+741	The track appears after GPS records at least two points.
+742	Track • history
+743	Track • live
+744	Road range to 0%
+745	Road range to reserve
+746	By road {0} km\n{1}\n\n{2}
+747	By road ≈ %.0f km
+756	REGENERATION
+757	RESERVE {0}% · ESTIMATE
+759	Opening hours {0}
+760	Coolant
+761	Voltage distribution by group
+762	Spread
+763	Difference between the highest and lowest values in the same readings. Voltage spread is converted from V to mV by multiplying by 1,000.
+764	Highest minus lowest group voltage from the same readings, multiplied by 1,000 for mV. Comparison at low current and similar temperature is most useful for monitoring balance.
+765	Cell spread
+766	Difference: {0} • efficiency ≈ {1}
+767	Calculating route profile and consumption…
+768	Calculating route to destination…
+769	Calculating size…
+770	Reference LG M50 OCV curve at 25 °C from Chen2020. The original default scale.
+771	Regeneration
+772	Relative range (%)
+774	Arrival reserve: {0}%
+775	Recording setting was not saved.
+776	Manual entry: {0}
+778	NE
+781	SOC +{0}% • remaining-energy estimate change {1}. BMS did not measure charging between these readings.{2}
+782	SOC and mean voltage
+784	Model SOC (%)
+785	SOC is reported by the vehicle. Its scale represents the usable battery range. The BMS uses voltage, current flow and its battery model. Separate upper and lower buffers for this vehicle have not been established.
+786	Voltage-based SOC
+787	Voltage-based SOC and chart
+788	SOC gain (%)
+789	Vehicle SOC %.1f %% · reserve %d %%
+790	Vehicle SOC {0} %
+794	SOH is the BMS health estimate relative to its reference capacity. Temperature, previous cycles and calibration affect it. Where group SOH is available, it applies to the parallel group. Recorded driving or a controlled test is needed to estimate available energy.
+795	Pack SOH
+796	Pack SOH: {0}
+797	Individual group SOH • BMS
+798	SOH · pack
+800	SERBIA
+801	NW
+802	Hide signal selection
+803	Recorded GPS altitudes only • gaps are not connected
+804	Satellite
+805	Satellite · ESA WorldCover 2021. Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium. The RGB composite is prepared at multiple resolutions. Each pixel in the most detailed Serbia layer represents about 20–27 m.\n\nBorders · Natural Earth. Places · GeoNames, CC BY 4.0 (creativecommons.org/licenses/by/4.0/).\n\nRoads · © OpenStreetMap contributors, ODbL 1.0 (openstreetmap.org/copyright), Geofabrik extracts from November 2026.\n\nElevation · Copernicus DEM GLO-90, processed into a colour layer. Contains modified Copernicus data (2019).
+806	Wait for a fix outdoors. Inaccurate and old locations are not added to the track.
+807	Save tyres
+808	Save measurement
+809	Save charger reading
+810	Save {0}
+811	Saved.
+812	Session {0} • SOC {1} → {2} %
+814	Anchors are not close enough or monotonic.
+815	GPS ready; waiting for movement, locations are not saved
+816	Raw D412 counter (W0)
+817	Grey: points without GPS altitude
+818	Map layers
+819	Power
+820	Power (V × A)
+821	Battery power
+822	Battery power is voltage × current ÷ 1,000, in kW. Positive means consumption; negative means energy input. Separately measured motor power may differ because the battery also supplies other loads.
+823	Motor power
+824	Connector power up to {0} kW
+825	Snow
+826	Recording off
+827	Measurement recording
+828	Recording on
+829	Recorded sessions
+830	Probe {0}
+831	Probe {0} · {1}
+832	Probes
+833	Probes · logical indices
+834	Probes: {0} • {1}
+835	Outside
+836	Outside conditions
+837	Outside temp.
+838	Outside temperature
+839	Serbia
+840	Average speed
+841	Mean voltage D43D/D440 is not fresh.
+842	Mean group voltage
+843	BMS mean voltage or the arithmetic mean of a complete array (108 groups for e-CMP, 96 for Zoe). The newer available reading is used. If neither is available, pack voltage divided by the selected vehicle's series-group count may be used. Source and time are given in the voltage-based SOC explanation.
+844	Mean voltage {0}
+845	Mean cell voltage
+846	Battery status • BMS
+847	Battery status • example
+848	State of charge
+850	Stellantis: e-CMP protocol source
+851	Current
+852	Battery current
+853	HV battery current is a BMS reading. In this app, positive means discharge and negative means charging or regeneration.
+854	Each point is an actual trip. Average speed includes stops; trips shorter than 3 km are excluded from this comparison.
+855	All
+856	TEMPERATURE
+857	TEMPERATURES
+858	Model point · tap the curve
+859	Points in this trip
+860	Accuracy ±{0} m • {1} s ago
+861	Phone has no Bluetooth
+862	Phone has no GPS receiver
+863	Battery temp.
+864	Temp. probes
+865	Temperature
+866	Battery temperature (°C)
+867	Inverter temperature is older than 2 min.
+868	Temperature outside 10–35 °C or unavailable.
+869	Temperature comes from the corresponding vehicle sensor. e-CMP reads 54 battery probes; Zoe reads 12. Average, minimum and maximum use readings returned by the BMS. Probe numbers indicate logical order.
+870	Vehicle temperature
+871	54 probe temperatures have not yet been received (D442).
+872	Temperatures by probe
+873	Probe temperatures: previous cycle is older than 2 min.
+874	Vehicle temperatures
+875	Temperature probes • BMS
+876	Temperature range
+877	Thermal map • example
+878	Battery test
+879	Coolant · heating
+880	Coolant · drive
+881	Coolant · drivetrain loop
+882	Coolant · motor inlet
+883	Tyre type and size are not available through verified OBD parameters. Enter them once and update after replacement.
+884	Warmer
+885	Find place or charger
+886	Searching for GPS fix
+887	Current power
+888	Current battery power: {0}
+892	In the app's saved history
+893	In progress: {0}% SOC • {1} kWh
+895	ENLARGE ↗
+896	Share of session time with frequent enough voltage/current readings to integrate energy. Higher coverage gives a more complete total.
+897	Share of the selected trip covered by good GPS readings. Gaps longer than 30 s break the track line. GPS monitoring stops at the end of the trip or when the vehicle disconnects.
+898	Onboard charger
+899	Turn recording on
+900	Enable Bluetooth and pair OBD in phone settings
+901	Remove
+902	Battery lifetime counters
+903	Total distance
+904	Total trips
+905	Total {0} km · driving ≈ {1} min · charging {2}\n\n
+906	Streets · © OpenStreetMap contributors, ODbL 1.0. Chargers · OSM, Open Charge Map (CC BY 4.0), open BlokVolt catalogue (ODbL) and individual local additions. Catalogue updated 15 Nov 2026; each card has its source and date. Green: energy listed as free; blue: paid or unknown pricing. Routing uses Serbia's network; availability and pricing are not live.
+907	Zoom out chart
+908	Zoom out map
+910	Enter at least two measurements for calculation.
+911	Enter the kWh value from the charger screen.
+912	Enter positive numbers in the stated units.
+913	Enter values from the Pelican/OBD app.
+914	Manual entry from the charger display; the BMS does not read it automatically.
+915	Internal resistance
+916	Pair Android-Vlink in phone settings (PIN 1234)
+917	Enter a place name. You can also choose start and destination by tapping the map.
+918	Compare recorded trips
+920	Access conditions are not listed.
+921	Ascent ↑ {0} m   Descent ↓ {1} m
+922	Ascent ↑ {0} m · descent ↓ {1} m
+923	Zoom in chart
+924	Zoom in map
+925	Enlarge model
+926	Zoom and pan the image, then select a module for its actual photograph and cell-group readings.
+927	Loading chargers…
+928	LIVE
+930	VCU temperatures are older than 2 min.
+931	VCU: additional temperatures not received.
+932	DRIVING
+933	Outside offline coverage
+934	Outside offline elevation coverage
+935	Wind
+936	Wind · no available forecast along this route. Wind effect is not included.
+937	Wind · {0} km/h, {1}. Average {2}. 
+938	Terrain elevation
+939	Terrain elevation (m) · tap the profile
+940	Elevation coverage is incomplete; ascent and descent are not included.
+941	Elevation · available for {0}% of route. Ascent and descent are not included.
+942	More
+943	Vmin • cell
+944	Route to charger
+945	Vehicle has a CCS connector for DC charging
+946	Vehicle • live
+947	Driving
+948	Recording trip
+949	Driving • live measurement
+950	Reset to 20%
+951	Recovered
+952	Probe value: {0}. 
+953	Driving time
+954	Weather: Open-Meteo location model during trip {0} • CC BY 4.0. Wind is a forecast, not a vehicle sensor.
+955	Unknown type
+956	BMS V×I and speed; segment distance is estimated from speed. Only intervals with fresh data and speed ≥10 km/h are shown. Stops and gaps are not connected.
+957	Wikimedia Commons, reduced photograph; an illustration of model and generation, not proof of equipment or battery.
+958	CLOSE
+959	END TRIP AND GPS
+960	For e-208
+961	Recorded consumption is required to estimate energy.
+962	For iCar Pro 2S, select Android-Vlink
+963	At least two actual readings are required for the selected parameters.
+964	Choose a start point or wait for a GPS position to show rings.
+965	No saved GPS points for this trip.
+966	To plan without GPS, choose a start point here, then tap the destination.
+967	For a more reliable test, record one uninterrupted charge with a larger SOC change, preferably around 20% to 80%. The app calculates the result when enough data is available.
+968	Reliable comparison requires ≥90% BMS reading coverage throughout charging.
+969	Capacity estimation requires two readings from the same cycle, with at least a 10% SOC change and a consistent BMS energy change.
+970	Capacity estimation requires charging with at least a 10% SOC change and stable temperature.
+971	A trend needs at least two driving segments with reliable speed and power. Confirmed total trip consumption is shown above.
+972	Stale · {0} · {1}
+973	Close
+974	Close voltage-based SOC
+975	Close chart
+976	Close map
+977	Close enlarged model
+978	Stop monitoring and exit app
+979	Measured energy covers intervals with available BMS data. During gaps it is a lower bound on energy entering the battery. SOC rise across a gap is saved separately as an inferred event.
+980	Sum of group voltages
+981	D412 meaning is not confirmed. Last query: {0}.
+984	Zoe phase 1 · CAN 11-bit
+985	Zoe phase 2 · CAN 29-bit
+987	Zoe {0}: no basic response. Check the selected generation and vehicle ignition.
+988	Zoe: adapter did not accept {0}
+989	Zoe: CanZE protocol source
+990	Zoe: showing actual SOC reported by the vehicle. No verified voltage model is enabled for this battery. Mean voltage: {0}. Pack SOH is not individual group SOH.
+991	Zoe: {0} queries without a valid response; unknown fields remain blank.
+994	adapter did not connect ({0})
+1003	destination {0} m. Not included in calculation.
+1009	national road
+1010	e-CMP reads 108 series groups and 54 temperature probes; Zoe reads 96 groups and 12 probes. The BMS measures the shared voltage of parallel cells. Only a complete received array is used to calculate the average.
+1013	phase 1
+1014	phase 2
+1016	main arterial road
+1021	V×I integration
+1022	12 s timeout
+1023	from BMS energy and SOC
+1024	from the last trip
+1025	from {0}
+1026	from charging
+1027	from trips
+1029	tailwind
+1030	local road
+1034	pack voltage ÷ {0}
+1035	profile nominal capacity; estimate until capacity test
+1036	insufficient data
+1037	not enough data
+1038	no response
+1040	e.g. summer 195/55 R16
+1045	monitoring stopped
+1046	{0} h ago
+1047	{0} min ago
+1048	{0} s ago
+1049	OBD connection lost
+1050	telemetry gap
+1051	variable direction
+1052	mean of {0} groups
+1053	charger
+1055	manually ended
+1056	series groups
+1057	recording off
+1058	secondary road
+1060	BMS mean voltage
+1067	in progress
+1069	longitudinal component <1 km/h
+1071	altitude unavailable
+1072	vehicle not responding for 120 s
+1075	{0}\nAnother cell's reference curve.
+1076	{0}  ·  Change vehicle
+1080	{0} groups
+1083	{0} kilometres, {1}
+1087	{0} component {1} km/h
+1088	{0} locations in the offline catalogue
+1089	{0} locations · catalogue updated 15 Nov 2026.\nOSM, Open Charge Map and operator additions. Data is not live.
+1092	{0} percent, {1} volts
+1093	{0} profiles · separate history and last readings
+1094	{0} series groups · BMS index order
+1095	{0} probes
+1096	{0} wind ≈ {1} along the last track segment
+1100	{0} · measured values
+1101	{0} • BMS before/after
+1102	{0} • BMS while charging
+1103	{0} • SOH {1} • cell Δ {2} • T {3}
+1105	{0} → {1} • SOC +{2}% • BMS unavailable during interval{3}
+1106	{0} → {1} • {2} without telemetry. Speed and route are unknown.
+1111	{0}: adapter did not accept the ECU address.
+1112	{0}: {1} • retry in {2} s
+1114	CELLS
+1115	Cells
+1116	Cells: {0} • {1}
+1118	Waiting for data
+1119	Waiting for vehicle SOC.
+1120	Waiting for data to estimate available capacity.
+1121	Waiting for mean group voltage or pack voltage.
+1122	Waiting for a trip of at least 3 km with ≥98% energy coverage.
+1123	Waiting for a fresh BMS reading.
+1124	Waiting for BMS readings. Connect the adapter to the vehicle.
+1125	Waiting for GPS start. Details and settings: ⓘ.
+1126	Waiting for an automatically recorded trip.
+1127	Waiting for enough readings to estimate range.
+1128	Waiting for a complete array: {0}.
+1129	Waiting for all 96 group voltages (2141/2142).
+1130	Waiting for new BMS readings
+1131	Waiting for actual BMS readings.
+1132	Waiting for actual readings from the selected vehicle. Pair the Vlink adapter in Android settings, then choose it on the home screen.
+1133	Waiting for actual vehicle SOC.
+1134	Waiting for a fresh vehicle response
+1135	Waiting for a fresh GPS point
+1136	Headwind
+1137	Failed to read the road network. Select the destination again.
+1138	Failed to read the saved track. Try again.
+1139	headwind
+1140	Schuko
+1141	Schuko requires a suitable portable EVSE. The estimate is limited to 2.3 kW.
+1142	width 
+1143	Yellow marks the voltage estimate from readings when available. White marks the selected source point of the model.
+1144	ΔBMS energy / ΔSOC × 100 • {0} automatic samples. Estimate from battery energy, excluding charger losses.
+1145	ΔV • cells
+1146	Δenergy / ΔSOC × 100. Rough estimate, valid only for the same cycle with a reliable BMS energy PID.
+1147	— means the ECU did not confirm a reading. A separate radiator temperature probe is not confirmed; motor inlet is not the same as radiator temperature.
+1148	— means no confirmed response or a stale reading.
+1151	≈ %.1f km straight-line
+1152	≈ %.1f km straight-line from start
+1155	● Battery
+1156	● Free energy
+1157	● Other chargers
+1158	● CONNECTED
+1159	● Start     ● Last GPS point  •  track sketch without map
+1161	● WAITING

@@ -1,0 +1,8244 @@
+[
+  {
+    "id": 0,
+    "sr": "\n\nProcena koristi potrošnju iz vožnji, teren i dostupnu prognozu vetra. AC limit: e-CMP 11 kW, Zoe 22 kW (konzervativno za Q motore). DC vreme uključuje okvirno opadanje snage. Čekanje na slobodan priključak nije uračunato.",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 1,
+    "sr": "\nModel terena Copernicus GLO-90. Mostovi i tuneli mogu odstupati.",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 2,
+    "sr": "\nOsnova {0} kWh/100 km. Model mase 1.650 kg i okvirnog povrata energije na spustu.",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 3,
+    "sr": "\nOčitano {0}",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 4,
+    "sr": " (pretpostavljena snaga)",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 5,
+    "sr": " / 10 % SOC",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 6,
+    "sr": " A",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 7,
+    "sr": " U istom intervalu {0} bez zapisa vožnje.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 8,
+    "sr": " V",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 9,
+    "sr": " cm",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 10,
+    "sr": " kW",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 11,
+    "sr": " kWh",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 12,
+    "sr": " kWh/100 km",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 13,
+    "sr": " km",
+    "files": [
+      "MainActivity.kt",
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 14,
+    "sr": " km/h",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 15,
+    "sr": " kΩ",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 16,
+    "sr": " m",
+    "files": [
+      "MainActivity.kt",
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 17,
+    "sr": " m n.v.",
+    "files": [
+      "PlannedElevation.kt"
+    ]
+  },
+  {
+    "id": 18,
+    "sr": " mV",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 19,
+    "sr": " metara",
+    "files": [
+      "PlannedElevation.kt"
+    ]
+  },
+  {
+    "id": 20,
+    "sr": " mm",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 21,
+    "sr": " °C",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 22,
+    "sr": " · bez podataka",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 23,
+    "sr": " · dolazak {0}%",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 24,
+    "sr": " · dolazak ≈ {0}%",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 25,
+    "sr": " · dolazak ≈ {0}% (ispod rezerve {1}%)",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 26,
+    "sr": " · potrebno dopunjavanje pre odredišta",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 27,
+    "sr": " · sačuvano očitavanje",
+    "files": [
+      "IndexedPackPanel.kt"
+    ]
+  },
+  {
+    "id": 28,
+    "sr": " · za SOC na dolasku potrebni su napunjenost i kapacitet",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 29,
+    "sr": " • SOC {0}%",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 30,
+    "sr": " • u toku",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 31,
+    "sr": " • {0} bez zapisa vožnje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 32,
+    "sr": "\" lon=\"",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 33,
+    "sr": "%.0f",
+    "files": [
+      "DriveConsumptionVisuals.kt",
+      "MapNavigationControls.kt",
+      "OfflineAtlasView.kt",
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 34,
+    "sr": "%.0f %%",
+    "files": [
+      "DriveConsumptionVisuals.kt"
+    ]
+  },
+  {
+    "id": 35,
+    "sr": "%.0f km",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 36,
+    "sr": "%.0f km/h",
+    "files": [
+      "DriveConsumptionVisuals.kt"
+    ]
+  },
+  {
+    "id": 37,
+    "sr": "%.1f",
+    "files": [
+      "ChargingPlanner.kt",
+      "DriveConsumptionVisuals.kt",
+      "IndexedPackPanel.kt",
+      "MainActivity.kt",
+      "ObdService.kt",
+      "OfflineAtlasView.kt",
+      "RouteCharging.kt",
+      "RouteWind.kt",
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 38,
+    "sr": "%.1f %%",
+    "files": [
+      "IndexedPackPanel.kt",
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 39,
+    "sr": "%.1f kWh (%s)",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 40,
+    "sr": "%.1f °C",
+    "files": [
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 41,
+    "sr": "%.2f",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 42,
+    "sr": "%.3f",
+    "files": [
+      "IndexedPackPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 43,
+    "sr": "%.3f V",
+    "files": [
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 44,
+    "sr": "%.4f",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 45,
+    "sr": "%.4f, %.4f",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 46,
+    "sr": "%.4f° N, %.4f° E",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 47,
+    "sr": "%.4f°, %.4f°",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 48,
+    "sr": "%.5f",
+    "files": [
+      "WeatherTracker.kt"
+    ]
+  },
+  {
+    "id": 49,
+    "sr": "%.{0}f",
+    "files": [
+      "ChartExplorer.kt",
+      "ExtraSensorPanel.kt",
+      "GpsTracker.kt",
+      "MainActivity.kt",
+      "MetricHelp.kt",
+      "PlannedElevation.kt",
+      "RouteEnergy.kt",
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 50,
+    "sr": "&amp;",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 51,
+    "sr": "&apos;",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 52,
+    "sr": "&gt;",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 53,
+    "sr": "&hourly=wind_speed_10m,wind_direction_10m&wind_speed_unit=kmh&timeformat=unixtime&forecast_hours=36",
+    "files": [
+      "RouteWind.kt"
+    ]
+  },
+  {
+    "id": 54,
+    "sr": "&lt;",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 55,
+    "sr": "&quot;",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 56,
+    "sr": "* M↔B je radno povezivanje po rednom broju. Tvoje fizičke pozicije su sačuvane; veza sa dijagnostičkim indeksima još nije potvrđena.",
+    "files": [
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 57,
+    "sr": ", razmernik ",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 58,
+    "sr": ", učitani putevi i naselja",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 59,
+    "sr": ", učitavanje puteva i naselja",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 60,
+    "sr": ". Model",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 61,
+    "sr": ".csv",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 62,
+    "sr": ".jpg",
+    "files": [
+      "OfflineAtlas.kt"
+    ]
+  },
+  {
+    "id": 63,
+    "sr": ".s2map",
+    "files": [
+      "OfflineAtlas.kt"
+    ]
+  },
+  {
+    "id": 64,
+    "sr": "0 km",
+    "files": [
+      "PlannedElevation.kt",
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 65,
+    "sr": "0 m",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 66,
+    "sr": "00001101-0000-1000-8000-00805F9B34FB",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 67,
+    "sr": "1. Sačekajte očitavanje ćelija dok auto miruje. 2. Zabeležite vožnju. 3. Napunite bateriju u jednom ciklusu uz promenu SOC od bar 10%. 4. Pošaljite ZIP za detaljnu analizu.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 68,
+    "sr": "108 serijskih grupa • primer",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 69,
+    "sr": "12 V akumulator",
+    "files": [
+      "MainActivity.kt",
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 70,
+    "sr": "12.4 kWh/100 km",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 71,
+    "sr": "12.4 mΩ",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 72,
+    "sr": "15m",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 73,
+    "sr": "18 MODULA · TVOJI OZNAČENI POLOŽAJI",
+    "files": [
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 74,
+    "sr": "18DADAF1",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 75,
+    "sr": "18DADBF1",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 76,
+    "sr": "18DAF1DA",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 77,
+    "sr": "18DAF1DB",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 78,
+    "sr": "1m",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 79,
+    "sr": "22 kWh · faza 1",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 80,
+    "sr": "22%04X",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 81,
+    "sr": "2220DE",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 82,
+    "sr": "2221CC",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 83,
+    "sr": "22320C",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 84,
+    "sr": "2291C8",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 85,
+    "sr": "23 °C",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 86,
+    "sr": "24 °C",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 87,
+    "sr": "29.7 kWh",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 88,
+    "sr": "3 Crossback E-Tense",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 89,
+    "sr": "397.4 V",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 90,
+    "sr": "3×16 A • 11 kW",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 91,
+    "sr": "41 kWh · faza 1",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 92,
+    "sr": "41 kWh · faza 1 · pre redizajna",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 93,
+    "sr": "41 kWh · faza 2 · redizajn od 2019",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 94,
+    "sr": "50 kWh · 2020–2023",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 95,
+    "sr": "50 kWh · pre baterije 54 kWh",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 96,
+    "sr": "50 kWh · prva e-CMP baterija",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 97,
+    "sr": "52 kWh · faza 2",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 98,
+    "sr": "58F",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 99,
+    "sr": "5m",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 100,
+    "sr": "6A2",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 101,
+    "sr": "6A6",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 102,
+    "sr": "7,4 kW",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 103,
+    "sr": "79B",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 104,
+    "sr": "7BB",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 105,
+    "sr": "7E4",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 106,
+    "sr": "7EC",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 107,
+    "sr": "85 kW",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 108,
+    "sr": "96 grupa · SOC iz vozila",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 109,
+    "sr": "</ele>",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 110,
+    "sr": "</gpx>\n",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 111,
+    "sr": "</name>\n",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 112,
+    "sr": "</time>",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 113,
+    "sr": "</trk>\n",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 114,
+    "sr": "</trkpt>\n",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 115,
+    "sr": "</trkseg>\n",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 116,
+    "sr": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 117,
+    "sr": "<ele>",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 118,
+    "sr": "<gpx version=\"1.1\" creator=\"e-208 Battery Lab\" xmlns=\"http://www.topografix.com/GPX/1/1\">\n",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 119,
+    "sr": "<time>",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 120,
+    "sr": "<trk><name>",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 121,
+    "sr": "<trkpt lat=\"",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 122,
+    "sr": "<trkseg>\n",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 123,
+    "sr": "AC i DC označavaju vrstu zabeleženih punjenja. Jedna sesija se broji jednom. Kada nema pouzdanog podatka o vrsti punjača, ostaje nepoznata vrsta. Porast SOC tokom prekida pokazuje moguće dodatno punjenje. Brojači obuhvataju sačuvanu istoriju ove aplikacije, najviše 500 sesija. Brisanje istorije briše i ove brojače.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 124,
+    "sr": "ANALIZA",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 125,
+    "sr": "ATAL",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 126,
+    "sr": "ATAT0",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 127,
+    "sr": "ATAT1",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 128,
+    "sr": "ATCAF1",
+    "files": [
+      "ObdReader.kt",
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 129,
+    "sr": "ATCP18",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 130,
+    "sr": "ATCRA694",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 131,
+    "sr": "ATCRA{0}",
+    "files": [
+      "ObdReader.kt",
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 132,
+    "sr": "ATE0",
+    "files": [
+      "ObdReader.kt",
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 133,
+    "sr": "ATFCSD300000",
+    "files": [
+      "ObdReader.kt",
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 134,
+    "sr": "ATFCSH6B4",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 135,
+    "sr": "ATFCSH{0}",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 136,
+    "sr": "ATFCSM1",
+    "files": [
+      "ObdReader.kt",
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 137,
+    "sr": "ATH0",
+    "files": [
+      "ObdReader.kt",
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 138,
+    "sr": "ATL0",
+    "files": [
+      "ObdReader.kt",
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 139,
+    "sr": "ATS0",
+    "files": [
+      "ObdReader.kt",
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 140,
+    "sr": "ATSH6B4",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 141,
+    "sr": "ATSH{0}",
+    "files": [
+      "ObdReader.kt",
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 142,
+    "sr": "ATSP6",
+    "files": [
+      "ObdReader.kt",
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 143,
+    "sr": "ATSP7",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 144,
+    "sr": "ATST32",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 145,
+    "sr": "ATST64",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 146,
+    "sr": "ATZ",
+    "files": [
+      "ObdReader.kt",
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 147,
+    "sr": "Adapter ne podržava ISO-TP flow control za ćelije (ATFC).",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 148,
+    "sr": "Adapter ne podržava duge odgovore za napone i sonde.",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 149,
+    "sr": "Adapter spreman • čekam odgovor vozila",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 150,
+    "sr": "Analiza baterije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 151,
+    "sr": "Android je odbio zahtev za lokaciju",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 152,
+    "sr": "Android nije dozvolio lokacijski servis; otvorite aplikaciju i proverite GPS",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 153,
+    "sr": "Android nije potvrdio brisanje sačuvanih sažetaka.",
+    "files": [
+      "MeasurementStorage.kt"
+    ]
+  },
+  {
+    "id": 154,
+    "sr": "Android-Vlink",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 155,
+    "sr": "Aritmetička sredina dostupnih vrednosti u ovoj kartici. Jedinica uz broj određuje parametar; napon se prikazuje u V, SOH u procentima, a temperatura u °C.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 156,
+    "sr": "Auto-put · narandžasto    Glavni put · žuto    Granica · svetloplavo",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 157,
+    "sr": "Automatska analiza baterije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 158,
+    "sr": "Automatske sesije iz stvarnih BMS očitavanja.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 159,
+    "sr": "Automatski test kapaciteta • {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 160,
+    "sr": "Automatsko povezivanje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 161,
+    "sr": "BATERIJA",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 162,
+    "sr": "BG 3428 KJ",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 163,
+    "sr": "BMS",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 164,
+    "sr": "BMS brojači D42E",
+    "files": [
+      "TripMonitor.kt"
+    ]
+  },
+  {
+    "id": 165,
+    "sr": "BMS energija",
+    "files": [
+      "MainActivity.kt",
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 166,
+    "sr": "BMS energija (kWh)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 167,
+    "sr": "BMS energija je procena preostale energije koju vozilo vraća preko parametra D865. Ukupni energetski brojači su posebna očitavanja. Energija u bateriju obuhvata i rekuperaciju, dok unos sa brojila punjača uključuje gubitke punjenja.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 168,
+    "sr": "BMS može prestati da odgovara tokom punjenja. SOC pre i posle će se uporediti kada se vozilo ponovo poveže.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 169,
+    "sr": "BMS ne vraća osnovne podatke",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 170,
+    "sr": "BMS očitavanje",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 171,
+    "sr": "BMS procenjuje preostalu energiju u bateriji. Izmereno V × I predstavlja energiju tokom intervala sa dostupnim naponom i strujom. Negativna snaga označava punjenje. Energiju preuzetu iz mreže možete upisati sa brojila punjača.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 172,
+    "sr": "BMS rastojanje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 173,
+    "sr": "BMS readings are read-only OBD data; GPS is from the phone. Null means no verified reading.",
+    "files": [
+      "TelemetryStore.kt"
+    ]
+  },
+  {
+    "id": 174,
+    "sr": "BMS sažeci",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 175,
+    "sr": "BMS se očitava{0}",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 176,
+    "sr": "BMS · električni parametri",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 177,
+    "sr": "Baterija",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 178,
+    "sr": "Baterija (BMS prosek)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 179,
+    "sr": "Baterija V×I: {0} • pokrivenost {1}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 180,
+    "sr": "Baterija i potrošnja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 181,
+    "sr": "Baterija max",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 182,
+    "sr": "Baterija min",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 183,
+    "sr": "Baterija · prosek",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 184,
+    "sr": "Baterija · slika i moduli",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 185,
+    "sr": "Battery Lab",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 186,
+    "sr": "Besplatna energija prema izvoru",
+    "files": [
+      "ChargingStations.kt"
+    ]
+  },
+  {
+    "id": 187,
+    "sr": "Besplatni",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 188,
+    "sr": "Bez potvrđenih ECU očitavanja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 189,
+    "sr": "Bluetooth",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 190,
+    "sr": "Bluetooth OBD adapter",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 191,
+    "sr": "Bluetooth alternativna veza",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 192,
+    "sr": "Bluetooth dozvola nije odobrena",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 193,
+    "sr": "Bluetooth je isključen; ponovni pokušaj",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 194,
+    "sr": "Bluetooth povezan • inicijalizujem adapter",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 195,
+    "sr": "Bluetooth sigurna veza",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 196,
+    "sr": "Bluetooth: Vgate iCar Pro 2S / Android-Vlink",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 197,
+    "sr": "Boja putanje pokazuje relativnu GPS visinu u ovoj vožnji; siva označava tačke bez visine. Prekidi GPS-a se ne povezuju.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 198,
+    "sr": "Brisanje nije završeno. {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 199,
+    "sr": "Brišem istoriju…",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 200,
+    "sr": "Broj grupa",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 201,
+    "sr": "Broj punjenja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 202,
+    "sr": "Broj sonde 1–54 nije položaj fizičkog modula.",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 203,
+    "sr": "Broj zabeleženih sesija sa priključenim kablom i ulaznom snagom preko 12 kW. OBC ovog vozila prihvata najviše 11 kW AC. Utvrđeni DC tip zadržava se kada snaga opadne. Sporo DC punjenje bez ovih podataka ostaje nepoznatog tipa. Brojač obuhvata snimljene sesije ove aplikacije.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 204,
+    "sr": "Broj zabeleženih sesija sa protokom energije u bateriju i sveže očitanim mrežnim naponom OBC-a. Tip se određuje tokom punjenja. Istorija pre ove verzije i punjenja bez odgovora vozila mogu imati nepoznat tip.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 205,
+    "sr": "Brojač ulaza uključuje rekuperaciju; ovo nije mrežno brojilo ni energija samo iz punjača. ",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 206,
+    "sr": "Bruto potrošeno",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 207,
+    "sr": "Brzina",
+    "files": [
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 208,
+    "sr": "Brzina koju prijavljuje GPS telefona. Prikazuje se za svežu lokaciju prihvatljive tačnosti. Može kratkotrajno odstupati od brzine koju očitava vozilo.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 209,
+    "sr": "Brzina očitana iz kontrolera vozila preko OBD-a. Zasebno se beleži GPS brzina telefona, kada je lokacija dostupna.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 210,
+    "sr": "Brzina vozila",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 211,
+    "sr": "Brzina ↔ potrošnja u kretanju",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 212,
+    "sr": "Brzo · DC",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 213,
+    "sr": "CALB NMC532 · GITT",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 214,
+    "sr": "CILJ",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 215,
+    "sr": "Cannot decode {0}",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 216,
+    "sr": "Cannot load packaged map geometry",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 217,
+    "sr": "Cena nije objavljena",
+    "files": [
+      "ChargingStations.kt"
+    ]
+  },
+  {
+    "id": 218,
+    "sr": "Cenu, radno vreme i uslove parkinga proveri kod operatora. Zelena označava besplatnu energiju prema izvoru; plava naplatu ili nepoznatu cenu.",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 219,
+    "sr": "Ceo dijagram",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 220,
+    "sr": "Chen i sar. (2020), JES 167 080534, tabela VIII; PyBaMM Chen2020. ",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 221,
+    "sr": "Ciklus: {0}",
+    "files": [
+      "IndexedPackPanel.kt"
+    ]
+  },
+  {
+    "id": 222,
+    "sr": "Cilj je već dostignut ({0}%).",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 223,
+    "sr": "Ciljni SOC: {0}%",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 224,
+    "sr": "Citroën",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 225,
+    "sr": "Corsa-e",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 226,
+    "sr": "D402",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 227,
+    "sr": "D410",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 228,
+    "sr": "D412",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 229,
+    "sr": "D413",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 230,
+    "sr": "D42E",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 231,
+    "sr": "D42E: brojači energije nisu osveženi.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 232,
+    "sr": "D42E: brojači energije nisu validni; prikazana su poslednja ispravna očitavanja.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 233,
+    "sr": "D434",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 234,
+    "sr": "D438",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 235,
+    "sr": "D43B",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 236,
+    "sr": "D43C",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 237,
+    "sr": "D43D",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 238,
+    "sr": "D43D/D822: dodatni BMS podaci nisu očitani.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 239,
+    "sr": "D440",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 240,
+    "sr": "D442",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 241,
+    "sr": "D445",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 242,
+    "sr": "D446",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 243,
+    "sr": "D47A",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 244,
+    "sr": "D49C",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 245,
+    "sr": "D4B5",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 246,
+    "sr": "D815",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 247,
+    "sr": "D816",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 248,
+    "sr": "D817",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 249,
+    "sr": "D822",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 250,
+    "sr": "D824",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 251,
+    "sr": "D82B",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 252,
+    "sr": "D854",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 253,
+    "sr": "D860",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 254,
+    "sr": "D862",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 255,
+    "sr": "D862/D863/D413: alternativne BMS skale nisu očitane.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 256,
+    "sr": "D863",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 257,
+    "sr": "D865",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 258,
+    "sr": "D86F",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 259,
+    "sr": "D870",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 260,
+    "sr": "D877",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 261,
+    "sr": "D87D",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 262,
+    "sr": "D8CD",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 263,
+    "sr": "D8CE",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 264,
+    "sr": "D8D6",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 265,
+    "sr": "D8D9",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 266,
+    "sr": "D8E1",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 267,
+    "sr": "D8F9",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 268,
+    "sr": "D8FB",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 269,
+    "sr": "DC/DC",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt",
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 270,
+    "sr": "DC6A",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 271,
+    "sr": "DEMO",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 272,
+    "sr": "DEMO • primeri, nisu podaci iz vozila",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 273,
+    "sr": "DIJAGNOSTIKA",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 274,
+    "sr": "DS",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 275,
+    "sr": "DTC čitanje i brisanje zahtevaju potvrđen protokol vozila.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 276,
+    "sr": "Danas km",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 277,
+    "sr": "Danas snimljeno",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 278,
+    "sr": "Danas vožnji",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 279,
+    "sr": "Datum podatka u izvoru: {0}",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 280,
+    "sr": "Deljenje nije uspelo: {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 281,
+    "sr": "Detaljna mapa se prikazuje kada BMS vrati temperature sondi.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 282,
+    "sr": "Detaljni parametri",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 283,
+    "sr": "Dijagnostika",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 284,
+    "sr": "Dijagram je analiza snimljenih vožnji iz oktobra i novembra 2026. Levo su tvoja merenja i dve tačke drugog e-208 iz AVILOO testa. Desno su poredbene LG M50, CALB NMC532, NMC622 krive i jedna tačka Entroview modula ECMP125P0M5.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 285,
+    "sr": "Dijagram napona i SOC-a. Raširi prste za uvećanje i povuci za pomeranje.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 286,
+    "sr": "Dnevni BMS sažeci počinju od sledećeg povezivanja.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 287,
+    "sr": "Dnevno i dugoročno",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 288,
+    "sr": "Do izabrane tačke nema povezane rute u offline mreži Srbije. Dodirni bliži javni put.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 289,
+    "sr": "Dodaj dopunu na rutu",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 290,
+    "sr": "Dodaj punjač na rutu",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 291,
+    "sr": "Dodatna očitavanja iz vozila",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 292,
+    "sr": "Dodatne BMS skale\nD862 {0} % · D863 {1} % · D413 {2} %\nNjihovo tačno značenje još nije potvrđeno.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 293,
+    "sr": "Dodatni porasti SOC u prekidu",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 294,
+    "sr": "Dodatni signali vožnje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 295,
+    "sr": "Dodirni ili povuci prst vodoravno za tačne vrednosti.",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 296,
+    "sr": "Dodirni liniju profila za kilometražu i nadmorsku visinu izabrane tačke. Žute oznake su planirane dopune.\n\nProfil koristi offline model terena Copernicus GLO-90, uz uzorkovanje trase na 200 m. To je visina terena, pa mostovi i tuneli mogu odstupati. Praznine u modelu nisu spojene linijom. Uspon i pad koriste filtrirane promene visine.",
+    "files": [
+      "PlannedElevation.kt"
+    ]
+  },
+  {
+    "id": 297,
+    "sr": "Dodirni mapu za procenu puta do odredišta.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 298,
+    "sr": "Dolazak ispod rezerve {0}%.",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 299,
+    "sr": "Domet",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 300,
+    "sr": "Domet putem koristi vašu izmerenu potrošnju. Instrument tabla koristi sopstveni model, obično bez izabrane rezerve. Nijedna procena nije garantovani domet.",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 301,
+    "sr": "Dopuna",
+    "files": [
+      "PlannedElevation.kt"
+    ]
+  },
+  {
+    "id": 302,
+    "sr": "Dopuna do {0}% · +{1} kWh · ≈ {2} min",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 303,
+    "sr": "Dopuna čeka SOC, kapacitet i kompatibilan priključak. Zoe DC zahteva ZE50 i potvrđenu CCS opremu na početnom ekranu.",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 304,
+    "sr": "Dopuni do {0}%",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 305,
+    "sr": "Dostignuta je rezerva od {0}%.",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 306,
+    "sr": "Dostupnost signala zavisi od ECU-a i adaptera. Novi profili su zasnovani na objavljenim protokolima i još nisu provereni na svim fizičkim vozilima. Stellantis varijante od 54 kWh nisu uključene. CCS kod Zoe ZE50 je opciona oprema.",
+    "files": [
+      "VehiclePicker.kt"
+    ]
+  },
+  {
+    "id": 307,
+    "sr": "Dozvoli da se ekran ugasi; dodirni da ostane uključen",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 308,
+    "sr": "Dozvoli precizan GPS",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 309,
+    "sr": "Dugoročno zdravlje baterije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 310,
+    "sr": "ELM inicijalizacija",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 311,
+    "sr": "ELM ne podržava komandu {0}",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 312,
+    "sr": "ELM nije vratio BMS adresu posle {0}",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 313,
+    "sr": "Ekonomičan tempo · {0}. Prilagodi signalizaciji i uslovima.",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 314,
+    "sr": "Ekran ostaje uključen; dodirni da isključiš",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 315,
+    "sr": "Energija",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 316,
+    "sr": "Energija iz baterije",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 317,
+    "sr": "Energija koju pokazuje punjač",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 318,
+    "sr": "Energija koristi zabeleženu potrošnju, model terena i dostupnu prognozu vetra. Model vozila ima masu 1.650 kg i okvirni povrat energije na spustu. AC limit je 11 kW za e-CMP i 22 kW za Zoe; DC vreme uključuje okvirno opadanje snage. Čekanje na slobodan punjač nije uračunato.\n\n",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 319,
+    "sr": "Energija na punjaču (kWh)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 320,
+    "sr": "Energija se dobija integracijom snage baterije V × I kroz vreme. Negativna snaga tokom vožnje predstavlja rekuperaciju. Obračun obuhvata intervale do 60 s između očitavanja. Duže praznine imaju nepoznatu energiju.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 321,
+    "sr": "Energija se računa integracijom snage baterije kroz vreme. Bruto potrošeno sabira pražnjenje, vraćeno sabira rekuperaciju, a neto predstavlja njihovu razliku. Praznine između očitavanja mogu smanjiti pokrivenost obračuna.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 322,
+    "sr": "Energija u bateriju",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 323,
+    "sr": "Energija ≈ {0} kWh",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 324,
+    "sr": "Evidentirano i procenjeno",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 325,
+    "sr": "Fabrička CATL kriva za tačnu ćeliju ovog vozila još nije potvrđena. Apsolutni SOC i zasebni gornji i donji bafer zato ostaju neutvrđeni. Za raspoloživi domet koristi se SOC vozila.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 326,
+    "sr": "Fotografija vozila",
+    "files": [
+      "VehiclePicker.kt"
+    ]
+  },
+  {
+    "id": 327,
+    "sr": "GPS PUTANJA",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 328,
+    "sr": "GPS VISINA PUTANJE",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 329,
+    "sr": "GPS brzina",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 330,
+    "sr": "GPS miruje • čekam vozilo",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 331,
+    "sr": "GPS miruje • čekam vožnju",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 332,
+    "sr": "GPS odjavljen",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 333,
+    "sr": "GPS pokrivenost",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 334,
+    "sr": "GPS ponovo uključen; čekam signal",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 335,
+    "sr": "GPS preciznost slabija od 60 m; tačka nije upisana",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 336,
+    "sr": "GPS prijemnik nije dostupan",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 337,
+    "sr": "GPS putanja: siva — visina nije snimljena",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 338,
+    "sr": "GPS registrovan; čekam novu lokaciju",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 339,
+    "sr": "GPS ručno zaustavljen",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 340,
+    "sr": "GPS signal nije dovoljno precizan",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 341,
+    "sr": "GPS snimljeno",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 342,
+    "sr": "GPS spreman • čekam kretanje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 343,
+    "sr": "GPS tačka nije sačuvana • proverite memoriju",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 344,
+    "sr": "GPS tačke u memoriji",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 345,
+    "sr": "GPS visina",
+    "files": [
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 346,
+    "sr": "GPS visina (m)",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 347,
+    "sr": "GPS visina potiče od telefona i zavisi od tačnosti satelitskog prijema. Model visine terena na mapi potiče od Copernicus GLO-90. Mostovi i tuneli mogu odstupati od terena ispod njih.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 348,
+    "sr": "GPS visina putanje · {0} m",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 349,
+    "sr": "GPS: {0}. ZIP uključuje sirova BMS očitavanja i GPS CSV/GPX kada postoje.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 350,
+    "sr": "GRAFICI",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 351,
+    "sr": "Geuder i sar. (2024), Batteries 10(8), 275, tabela 2, kolona LP57; odeljci 2.3 i 2.4.1.",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 352,
+    "sr": "Grad, mesto ili naziv punjača",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 353,
+    "sr": "Grafikon će se pojaviti kada BMS vrati sve napone ćelija.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 354,
+    "sr": "Grubo poređenje laboratorijske NMC622 ćelije 5,2 Ah sa elektrolitom LP57 na 25 °C. Samo četiri objavljene tačke pri pražnjenju C/10, povezane pravim linijama.",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 355,
+    "sr": "Grupa {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 356,
+    "sr": "Gume • kontekst za analizu",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 357,
+    "sr": "HH:mm",
+    "files": [
+      "ChartExplorer.kt",
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 358,
+    "sr": "HH:mm:ss",
+    "files": [
+      "ChartExplorer.kt",
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 359,
+    "sr": "HV napon punjača",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 360,
+    "sr": "Hladnije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 361,
+    "sr": "ISTORIJA",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 362,
+    "sr": "IZABRANO {0}",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 363,
+    "sr": "Interpolacija mirnog srednjeg napona ka D862 skali; nije potvrđeni bruto SOC.",
+    "files": [
+      "VoltageSocCalibration.kt"
+    ]
+  },
+  {
+    "id": 364,
+    "sr": "Interpolacija mirovanja na D862 skali {0} % · {1} sidara",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 365,
+    "sr": "Invalid trip start",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 366,
+    "sr": "Inverter",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt",
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 367,
+    "sr": "Isključi snimanje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 368,
+    "sr": "Ista tačka.",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 369,
+    "sr": "Istorija i privremeni izvozi  ·  {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 370,
+    "sr": "Istorija je obrisana.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 371,
+    "sr": "Istorija punjenja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 372,
+    "sr": "Iz stvarno unetih merenja • {0} serijskih grupa",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 373,
+    "sr": "Izaberi OBD adapter",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 374,
+    "sr": "Izaberi SOC model",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 375,
+    "sr": "Izaberi adapter",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 376,
+    "sr": "Izaberi tačku SOC modela",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 377,
+    "sr": "Izaberi tačku profila visine",
+    "files": [
+      "PlannedElevation.kt"
+    ]
+  },
+  {
+    "id": 378,
+    "sr": "Izaberi upareni OBD adapter",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 379,
+    "sr": "Izaberi vozilo",
+    "files": [
+      "MainActivity.kt",
+      "VehiclePicker.kt"
+    ]
+  },
+  {
+    "id": 380,
+    "sr": "Izaberi vožnju",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 381,
+    "sr": "Izaberite adapter, pa pritisnite Poveži. Posle prvog povezivanja veza se automatski obnavlja.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 382,
+    "sr": "Izaberite signale • lista se pomera",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 383,
+    "sr": "Izaberite snimljenu vožnju za poređenje brzine i potrošnje.",
+    "files": [
+      "DriveConsumptionVisuals.kt"
+    ]
+  },
+  {
+    "id": 384,
+    "sr": "Izaberite upareni OBD adapter",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 385,
+    "sr": "Izaberite upareni Vlink adapter u aplikaciji",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 386,
+    "sr": "Izabran {0} · izaberi adapter i poveži",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 387,
+    "sr": "Izabran {0}. Pritisnite Poveži.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 388,
+    "sr": "Izabrano",
+    "files": [
+      "VehiclePicker.kt"
+    ]
+  },
+  {
+    "id": 389,
+    "sr": "Izabrano odredište",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 390,
+    "sr": "Izbor modela se pamti i odmah menja naponsku procenu. Domet koristi SOC vozila.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 391,
+    "sr": "Izbor nije sačuvan. Pokušaj ponovo.",
+    "files": [
+      "RangeSettingsDialog.kt",
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 392,
+    "sr": "Izbor se pamti. Oba kruga i upozorenje za dolazak na ruti koriste ovu rezervu.",
+    "files": [
+      "RangeSettingsDialog.kt"
+    ]
+  },
+  {
+    "id": 393,
+    "sr": "Izbor vozila nije sačuvan",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 394,
+    "sr": "Izmereno V×I",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 395,
+    "sr": "Izohipse",
+    "files": [
+      "MapControls.kt"
+    ]
+  },
+  {
+    "id": 396,
+    "sr": "Izohipse isključene",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 397,
+    "sr": "Izohipse su dostupne uz visinu terena.",
+    "files": [
+      "MapControls.kt"
+    ]
+  },
+  {
+    "id": 398,
+    "sr": "Izohipse su izvedene iz istih offline visina. Pripremljena mreža ima korak 1/512° (oko 150–220 m), pa linije ne predstavljaju detaljan geodetski plan. Interval prati zum. Šrafirana područja su van dostupnih podataka; nisu nulta nadmorska visina.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 399,
+    "sr": "Izohipse su vidljive uz reljef",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 400,
+    "sr": "Izohipse {0} m",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 401,
+    "sr": "Izohipse {0} m · deo podataka nedostaje",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 402,
+    "sr": "Izohipse {0} m · učitavanje",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 403,
+    "sr": "Izolacija HV",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt",
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 404,
+    "sr": "Izvan satelitskog obuhvata",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 405,
+    "sr": "Izvezi CSV",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 406,
+    "sr": "Izvezi merenja kao ZIP",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 407,
+    "sr": "Izvezi merenja za analizu",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 408,
+    "sr": "Izvor",
+    "files": [
+      "VehiclePicker.kt"
+    ]
+  },
+  {
+    "id": 409,
+    "sr": "Izvor fotografije",
+    "files": [
+      "VehiclePicker.kt"
+    ]
+  },
+  {
+    "id": 410,
+    "sr": "Izvor: {0}",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 411,
+    "sr": "Izvor: {0}\nOffline katalog dopunjen 15.11.2026.",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 412,
+    "sr": "Izvor: {0}\n{1}",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 413,
+    "sr": "Izvor: {0}. Pozitivna snaga prazni bateriju; negativna vraća energiju.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 414,
+    "sr": "Izvori\nChen i sar., JES 167 (2020) 080534 / PyBaMM Chen2020\narxiv.org/abs/2610.23049\ndoi.org/10.3390/batteries10080275\nentroview.com — Battery Certification Report, 19.05.2025.\nAVILOO — e-208 50 kWh, 08.11.2022.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 415,
+    "sr": "Izvoz nije uspeo: {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 416,
+    "sr": "JI",
+    "files": [
+      "WeatherTracker.kt"
+    ]
+  },
+  {
+    "id": 417,
+    "sr": "JZ",
+    "files": [
+      "WeatherTracker.kt"
+    ]
+  },
+  {
+    "id": 418,
+    "sr": "Jedna sveža CALB ćelija, grana pražnjenja; njena SOC skala važi za raspon tog testa. Nije identifikacija CATL ćelije, apsolutni SOC vozila ili merenje bafera.",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 419,
+    "sr": "Jedno sveže merenje po danu; SOH je BMS procena, a razlika ćelija zavisi od opterećenja i SOC.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 420,
+    "sr": "Kabl",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 421,
+    "sr": "Kako se računa rekuperacija",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 422,
+    "sr": "Kapacitet iz dva merenja: {0} kWh",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 423,
+    "sr": "Kapacitet izveden iz vožnje ili punjenja računa se iz promene energije i SOC-a. Mala promena SOC-a povećava grešku. Temperatura, nepotpuna pokrivenost i pouzdanost energetskog podatka utiču na procenu.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 424,
+    "sr": "Kapacitet {0} kWh • {1}. Snaga zavisi od ugrađenog punjača i priključka; pri kraju punjenja snaga može opasti.",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 425,
+    "sr": "Katalog nema potvrđen Type 2, CCS2 ili šuko priključak. Dopuna za e-208 nije izračunata.",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 426,
+    "sr": "Katalog punjača nije dostupan.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 427,
+    "sr": "Kilometraža",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 428,
+    "sr": "Kilometraža bez snimljene vožnje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 429,
+    "sr": "Kilometraža vozila",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 430,
+    "sr": "Koristi GPS polazak",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 431,
+    "sr": "Kraj",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 432,
+    "sr": "Kriva izabranog modela",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 433,
+    "sr": "Kriva napona prema SOC-u: {0}",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 434,
+    "sr": "Krug %.0f · povratak %.0f km",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 435,
+    "sr": "Krugovi dometa",
+    "files": [
+      "RangeSettingsDialog.kt",
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 436,
+    "sr": "Krugovi su vazdušna udaljenost. Detalji na ⓘ.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 437,
+    "sr": "LG M50 · Chen2020",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 438,
+    "sr": "Leđni",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 439,
+    "sr": "Licenca",
+    "files": [
+      "VehiclePicker.kt"
+    ]
+  },
+  {
+    "id": 440,
+    "sr": "Lokacija je isključena u telefonu",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 441,
+    "sr": "Lokacija se čuva samo uz prepoznatu vožnju.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 442,
+    "sr": "Lokacija telefona je isključena",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 443,
+    "sr": "M%02d · B%02d*",
+    "files": [
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 444,
+    "sr": "MCU",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 445,
+    "sr": "MCU: temperatura invertera nije očitana.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 446,
+    "sr": "MIN {0}\nMAX {1}",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 447,
+    "sr": "MIN/MAX važe za prikazani interval. Kursor prikazuje najbliže stvarno očitavanje (do 30 s), sa njegovim vremenom. Prekidi duži od 60 s nisu spojeni.",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 448,
+    "sr": "Maks. brzina",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 449,
+    "sr": "Maks. punjenje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 450,
+    "sr": "Maksimum",
+    "files": [
+      "MainActivity.kt",
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 451,
+    "sr": "Malo podataka: kratke vožnje i zagrevanje mogu snažno promeniti procenu.",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 452,
+    "sr": "Mapa",
+    "files": [
+      "MapControls.kt"
+    ]
+  },
+  {
+    "id": 453,
+    "sr": "Mapa Srbije radi offline. Putanja se dodaje po snimanju GPS vožnje.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 454,
+    "sr": "Mapa baterije · temperature",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 455,
+    "sr": "Marka, model, baterija ili motor",
+    "files": [
+      "VehiclePicker.kt"
+    ]
+  },
+  {
+    "id": 456,
+    "sr": "Medina i sar. (2026), Cell_4, izvorni GITT podaci, CC BY 4.0. ",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 457,
+    "sr": "Memorija merenja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 458,
+    "sr": "Merenja za analizu",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 459,
+    "sr": "Merenje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 460,
+    "sr": "Mesta",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 461,
+    "sr": "Mesto nije pronađeno u offline katalogu.",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 462,
+    "sr": "Min {0} · prosek {1} · max {2} {3}",
+    "files": [
+      "IndexedPackPanel.kt"
+    ]
+  },
+  {
+    "id": 463,
+    "sr": "Minimum",
+    "files": [
+      "MainActivity.kt",
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 464,
+    "sr": "Model druge ćelije; nije potvrđena CATL kriva ovog vozila. Ne koriguje temperaturu, opterećenje, histerezu ni starenje.",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 465,
+    "sr": "Model nema dovoljno visina za ovu rutu.",
+    "files": [
+      "PlannedElevation.kt"
+    ]
+  },
+  {
+    "id": 466,
+    "sr": "Model pokriva {0}% rute · praznine nisu spojene",
+    "files": [
+      "PlannedElevation.kt"
+    ]
+  },
+  {
+    "id": 467,
+    "sr": "Model terena ",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 468,
+    "sr": "Model vremena",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 469,
+    "sr": "Model: {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 470,
+    "sr": "Model: {0} ▾",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 471,
+    "sr": "Mokka-e",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 472,
+    "sr": "Motor",
+    "files": [
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 473,
+    "sr": "Motor · stator",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 474,
+    "sr": "N%02dE%03d",
+    "files": [
+      "OfflineAtlas.kt"
+    ]
+  },
+  {
+    "id": 475,
+    "sr": "NAPON",
+    "files": [
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 476,
+    "sr": "NASTAVI AUTOMATSKO SNIMANJE",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 477,
+    "sr": "NMC532 / grafit",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 478,
+    "sr": "NMC622 / grafit, LP57",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 479,
+    "sr": "NMC622 · 4 tačke C/10",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 480,
+    "sr": "NMC811 / grafit–silicijum",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 481,
+    "sr": "Nadmorska visina",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 482,
+    "sr": "Nadmorska visina terena (m)",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 483,
+    "sr": "Najhladnija",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 484,
+    "sr": "Najniža",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 485,
+    "sr": "Najniža / najviša grupa",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 486,
+    "sr": "Najniža grupa",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 487,
+    "sr": "Najniža temp.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 488,
+    "sr": "Najniža vrednost u skupu očitavanja ove kartice. Jedinica uz broj pokazuje da li je prikazan napon, SOH, temperatura ili drugi parametar.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 489,
+    "sr": "Najniži napon među očitanim serijskim grupama baterije. e-208 ima 108 grupa, sa po dve paralelne ćelije. Kratkotrajni pad pod opterećenjem posmatra se zajedno sa strujom, temperaturom i SOC-om.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 490,
+    "sr": "Najniži napon ćelija",
+    "files": [
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 491,
+    "sr": "Najpouzdanije posle mirovanja.",
+    "files": [
+      "PackSocDisplay.kt"
+    ]
+  },
+  {
+    "id": 492,
+    "sr": "Najtoplija",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 493,
+    "sr": "Najviša",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 494,
+    "sr": "Najviša grupa",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 495,
+    "sr": "Najviša temp.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 496,
+    "sr": "Najviša vrednost u skupu očitavanja ove kartice. Tumači se u jedinici prikazanoj uz broj i zajedno sa ostalim vrednostima iste kartice.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 497,
+    "sr": "Najviši napon ćelija",
+    "files": [
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 498,
+    "sr": "Naplata · cenu proveri u aplikaciji operatora",
+    "files": [
+      "ChargingStations.kt"
+    ]
+  },
+  {
+    "id": 499,
+    "sr": "Napomene očitavanja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 500,
+    "sr": "Napon",
+    "files": [
+      "IndexedPackPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 501,
+    "sr": "Napon baterije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 502,
+    "sr": "Napon dolazi iz očitavanja vozila. Napon paketa je zbir serijski povezanih grupa, a napon jedne grupe odgovara njenom paru paralelnih ćelija. Struja i vreme od poslednjeg punjenja ili vožnje utiču na trenutnu vrednost.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 503,
+    "sr": "Napon grupe",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 504,
+    "sr": "Napon grupe (V)",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 505,
+    "sr": "Napon i SOC",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 506,
+    "sr": "Napon je izvan izmerenog raspona; nema ekstrapolacije.",
+    "files": [
+      "VoltageSocCalibration.kt"
+    ]
+  },
+  {
+    "id": 507,
+    "sr": "Napon je van izmerenog opsega izabranog modela; nema ekstrapolacije.",
+    "files": [
+      "PackSocDisplay.kt"
+    ]
+  },
+  {
+    "id": 508,
+    "sr": "Napon paketa",
+    "files": [
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 509,
+    "sr": "Napon paketa (V)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 510,
+    "sr": "Napon u voltima prema SOC-u vozila i referentnim krivama. Dodirni za uvećanje.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 511,
+    "sr": "Napon ćelija • BMS",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 512,
+    "sr": "Naponi 108 ćelija još nisu očitani (D440).",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 513,
+    "sr": "Naponi grupa: prethodni ciklus je stariji od 2 min.",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 514,
+    "sr": "Naponska procena nije dostupna: nema svežeg očitavanja.",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 515,
+    "sr": "Nazad na početnu",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 516,
+    "sr": "Nedostaje dozvola za preciznu lokaciju",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 517,
+    "sr": "Nedostaje kompletan odgovor D440 za 108 napona ćelija.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 518,
+    "sr": "Nedostaje kompletan odgovor D442 za 54 temperature.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 519,
+    "sr": "Nedostaje kompletan odgovor D4B5 za zdravlje ćelija.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 520,
+    "sr": "Nedostaju tri različita mirna sidra D862 (≥15% i ≥0,04 V).",
+    "files": [
+      "VoltageSocCalibration.kt"
+    ]
+  },
+  {
+    "id": 521,
+    "sr": "Nedovoljno energije za ovu deonicu. Dodaj raniji punjač.",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 522,
+    "sr": "Neispravan iznos kWh",
+    "files": [
+      "ChargerMeterStore.kt"
+    ]
+  },
+  {
+    "id": 523,
+    "sr": "Nema automatske sesije; unos će biti samostalan.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 524,
+    "sr": "Nema izabranog adaptera",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 525,
+    "sr": "Nema lokacija za ovaj izbor.",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 526,
+    "sr": "Nema potvrđenog vremena očitavanja",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 527,
+    "sr": "Nema procene",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 528,
+    "sr": "Nema sveže lokacije duže od 15 s",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 529,
+    "sr": "Nema uzorka blizu kursora",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 530,
+    "sr": "Nema visinskih podataka",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 531,
+    "sr": "Nema zabeležene vožnje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 532,
+    "sr": "Nepoznata greška",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 533,
+    "sr": "Neto V×I",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 534,
+    "sr": "Neto energija",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 535,
+    "sr": "Neto potrošnja",
+    "files": [
+      "DriveConsumptionVisuals.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 536,
+    "sr": "Neto potrošnja (kWh/100 km)",
+    "files": [
+      "DriveConsumptionVisuals.kt"
+    ]
+  },
+  {
+    "id": 537,
+    "sr": "Nije OCV kriva u mirovanju. Veoma gruba interpolacija samo od 5 do 100%; ne prikazuje detaljan oblik krive između tačaka i nije CATL kalibracija.",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 538,
+    "sr": "Nije moguće sačuvati GPS tačku u memoriju telefona",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 539,
+    "sr": "Nije povezan",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 540,
+    "sr": "Nije povezano",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 541,
+    "sr": "Nije priključen",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 542,
+    "sr": "Not Found",
+    "files": [
+      "PackViewerActivity.kt"
+    ]
+  },
+  {
+    "id": 543,
+    "sr": "Novo BMS merenje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 544,
+    "sr": "OBC izlaz HV",
+    "files": [
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 545,
+    "sr": "OBC temperatura",
+    "files": [
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 546,
+    "sr": "OBC · ugrađeni punjač",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 547,
+    "sr": "OBD odgovor nije stigao",
+    "files": [
+      "BatteryReader.kt"
+    ]
+  },
+  {
+    "id": 548,
+    "sr": "OBD odgovor nije stigao: {0}",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 549,
+    "sr": "OBD praćenje",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 550,
+    "sr": "OBD prekinut",
+    "files": [
+      "BatteryReader.kt"
+    ]
+  },
+  {
+    "id": 551,
+    "sr": "OBD uređaj",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 552,
+    "sr": "OBD veza je zatvorena",
+    "files": [
+      "BatteryReader.kt",
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 553,
+    "sr": "OK",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 554,
+    "sr": "OSVEŽI",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 555,
+    "sr": "OTVORI MAPU I PROFIL VISINE",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 556,
+    "sr": "OTVORI NADZOR",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 557,
+    "sr": "OTVORI SLIKU SA SVIM VREDNOSTIMA ↗",
+    "files": [
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 558,
+    "sr": "OVERRIDE_DEPRECATION",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 559,
+    "sr": "Obično · AC",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 560,
+    "sr": "Objašnjenje — {0}",
+    "files": [
+      "MainActivity.kt",
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 561,
+    "sr": "Obrisati istoriju merenja?",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 562,
+    "sr": "Obriši istoriju",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 563,
+    "sr": "Obriši istoriju merenja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 564,
+    "sr": "Odakle duva",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 565,
+    "sr": "Odgovor D440 sadrži nevažeće napone ćelija.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 566,
+    "sr": "Odgovor D442 sadrži nevažeće temperature.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 567,
+    "sr": "Odgovor D4B5 sadrži nevažeće SOH ćelija.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 568,
+    "sr": "Odobrite Bluetooth dozvolu",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 569,
+    "sr": "Odobrite Bluetooth dozvolu u aplikaciji",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 570,
+    "sr": "Odredište",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 571,
+    "sr": "Odustani",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 572,
+    "sr": "Odvojeno",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 573,
+    "sr": "Offline mapa, ",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 574,
+    "sr": "OfflineAtlas",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 575,
+    "sr": "OfflineContours",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 576,
+    "sr": "Okvirna procena · poredbena kriva druge ćelije.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 577,
+    "sr": "Okvirno po naponu ({0}). Model: {1}. {2}",
+    "files": [
+      "PackSocDisplay.kt"
+    ]
+  },
+  {
+    "id": 578,
+    "sr": "Opel",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 579,
+    "sr": "Open-Meteo current model",
+    "files": [
+      "WeatherTracker.kt"
+    ]
+  },
+  {
+    "id": 580,
+    "sr": "Open-Meteo · {0} · {1}% trase.",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 581,
+    "sr": "OpenStreetMap · ODbL 1.0",
+    "files": [
+      "ChargingStations.kt"
+    ]
+  },
+  {
+    "id": 582,
+    "sr": "Opterećenje nije poznato.",
+    "files": [
+      "PackSocDisplay.kt"
+    ]
+  },
+  {
+    "id": 583,
+    "sr": "Originalna fotografija šasije Peugeot e-208; otvori mapu sa oznakama",
+    "files": [
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 584,
+    "sr": "Orijentacioni krugovi uključuju 20% duži put od vazdušne udaljenosti. Povratak pretpostavlja iste uslove u oba smera. Ruta računa stvarne puteve i teren.",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 585,
+    "sr": "Osnova ",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 586,
+    "sr": "Osnova merenja punjenja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 587,
+    "sr": "Otpornost izolacije visokonaponskog sistema koju vraća BMS, u kΩ. Za procenu problema potrebni su uslovi merenja i fabrička dijagnostika.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 588,
+    "sr": "Otvori izvor podataka",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 589,
+    "sr": "Otvori mapu vožnje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 590,
+    "sr": "Otvorite aplikaciju i proverite preciznu lokaciju",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 591,
+    "sr": "Ovo je pregled očitavanja, bez pretpostavljenih fizičkih položaja modula i sondi.",
+    "files": [
+      "IndexedPackPanel.kt"
+    ]
+  },
+  {
+    "id": 592,
+    "sr": "Ovog meseca km",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 593,
+    "sr": "Ovog meseca vožnji",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 594,
+    "sr": "Očitani napon je van raspona modela; nema ekstrapolacije.",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 595,
+    "sr": "Očitano {0}",
+    "files": [
+      "ChartExplorer.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 596,
+    "sr": "Očitano {0} · {1}",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 597,
+    "sr": "Očitavanje 96 grupa: {0}/96. Kompletan ciklus traje više osvežavanja.",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 598,
+    "sr": "Očitavanje motora, odvojeno od snage baterije V × I.",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 599,
+    "sr": "PODEŠAVANJA",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 600,
+    "sr": "POREĐENJE MERENJA",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 601,
+    "sr": "POTROŠNJA",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 602,
+    "sr": "POVEŽI I POKRENI NADZOR",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 603,
+    "sr": "POČETNA",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 604,
+    "sr": "PROVERI GPS I DOZVOLU",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 605,
+    "sr": "PUNJENJE",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 606,
+    "sr": "Padavine",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 607,
+    "sr": "Parametri ({0})",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 608,
+    "sr": "Peugeot",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 609,
+    "sr": "Plan punjenja",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 610,
+    "sr": "Plan sa sačuvanim SOC-om · {0}",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 611,
+    "sr": "Plava: srednja brzina · narandžasta: neto kWh/100 km u istoj deonici.",
+    "files": [
+      "DriveConsumptionVisuals.kt"
+    ]
+  },
+  {
+    "id": 612,
+    "sr": "Plavi krug je jednosmerni poluprečnik, a žuti isprekidani uključuje i povratak. Kilometri uz njih predstavljaju vazdušnu udaljenost. Izbor odredišta računa stvarnu trasu po putevima.",
+    "files": [
+      "RangeSettingsDialog.kt"
+    ]
+  },
+  {
+    "id": 613,
+    "sr": "Po poslednjih ≥5 min stvarnog punjenja ({0} kW u bateriji): oko {1} min",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 614,
+    "sr": "Pod opterećenjem ili pri punjenju nema naponske procene.",
+    "files": [
+      "VoltageSocCalibration.kt"
+    ]
+  },
+  {
+    "id": 615,
+    "sr": "Pod opterećenjem procena može odstupati.",
+    "files": [
+      "PackSocDisplay.kt"
+    ]
+  },
+  {
+    "id": 616,
+    "sr": "Podaci i pokriće",
+    "files": [
+      "MapControls.kt"
+    ]
+  },
+  {
+    "id": 617,
+    "sr": "Podaci i pokriće mape",
+    "files": [
+      "MapControls.kt"
+    ]
+  },
+  {
+    "id": 618,
+    "sr": "Podaci na mapi",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 619,
+    "sr": "Podaci punjača su stariji od 2 min.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 620,
+    "sr": "Podešavanja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 621,
+    "sr": "Pogon · temperature",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 622,
+    "sr": "Pogon · trenutno",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 623,
+    "sr": "Pojedinačne grupe",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 624,
+    "sr": "Pojedinačni SOH grupa nije dostupan u ovom protokolu. SOH paketa se ne preslikava na ćelije.",
+    "files": [
+      "IndexedPackPanel.kt"
+    ]
+  },
+  {
+    "id": 625,
+    "sr": "Pokriveni km",
+    "files": [
+      "DriveConsumptionVisuals.kt"
+    ]
+  },
+  {
+    "id": 626,
+    "sr": "Pokriveno vreme",
+    "files": [
+      "DriveConsumptionVisuals.kt"
+    ]
+  },
+  {
+    "id": 627,
+    "sr": "Pokrivenost",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 628,
+    "sr": "Pokrivenost istorije punjenja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 629,
+    "sr": "Pokrivenost snage",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 630,
+    "sr": "Polazak je izabran. Dodirni odredište.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 631,
+    "sr": "Polazak sa ovog mesta",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 632,
+    "sr": "Polazak sa poslednje GPS pozicije {0}.",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 633,
+    "sr": "Polazak sa ručno izabranog mesta",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 634,
+    "sr": "Polazni SOC {0}% · {1}",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 635,
+    "sr": "Pomeri vremenski prozor",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 636,
+    "sr": "Pomoćni akumulator",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 637,
+    "sr": "Porast BMS procene preostale energije je zabeležen",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 638,
+    "sr": "Poredbena kriva druge ćelije. Nije CATL kalibracija ovog vozila.",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 639,
+    "sr": "Poredbena prizmatična CALB ćelija 58 Ah: 26 izmerenih napona posle odmora tokom GITT pražnjenja. Komora 25 °C; ćelija 24,2–24,4 °C.",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 640,
+    "sr": "Poređenje ranijih merenja",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 641,
+    "sr": "Poređenje će se pojaviti posle vožnje od bar 3 km sa potvrđenom neto energijom.",
+    "files": [
+      "DriveConsumptionVisuals.kt"
+    ]
+  },
+  {
+    "id": 642,
+    "sr": "Poslednja",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 643,
+    "sr": "Poslednje očitavanje baterije",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 644,
+    "sr": "Poslednje očitavanje baterije {0}.",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 645,
+    "sr": "Poslednje očitavanje · {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 646,
+    "sr": "Poslednje temperature sondi su starije od 2 min.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 647,
+    "sr": "Poslednji naponi ćelija su stariji od 2 min.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 648,
+    "sr": "Poslednji sačuvani podaci · vreme očitavanja na ⓘ.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 649,
+    "sr": "Potrebna je precizna lokacija",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 650,
+    "sr": "Potrebno je 20 min stabilnog mirovanja baterije.",
+    "files": [
+      "VoltageSocCalibration.kt"
+    ]
+  },
+  {
+    "id": 651,
+    "sr": "Potrebno je ponovo aktivirati GPS",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 652,
+    "sr": "Potrebno u bateriji ≈ {0} kWh",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 653,
+    "sr": "Potrošeno (kWh)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 654,
+    "sr": "Potrošnja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 655,
+    "sr": "Potrošnja i SOC na dolasku · potrebno je dovoljno snimljenih vožnji.",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 656,
+    "sr": "Potrošnja iz BMS • izabrana vožnja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 657,
+    "sr": "Potrošnja se računa kao neto utrošena energija podeljena pređenim kilometrima, pomnoženo sa 100. Prikaz u kWh/100 km može se porediti samo uz dovoljno dužu vožnju. Ubrzanje, brzina, nagib, temperatura i potrošači menjaju rezultat. Osnova izračunavanja navedena je uz pojedinačnu vožnju.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 658,
+    "sr": "Povezan",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 659,
+    "sr": "Povezano",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 660,
+    "sr": "Povezano • BMS očitan",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 661,
+    "sr": "Povezivanje sa vozilom",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 662,
+    "sr": "Povezivanje sa {0}...",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 663,
+    "sr": "Povezujem Bluetooth (1/2)",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 664,
+    "sr": "Povezujem Bluetooth (2/2)",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 665,
+    "sr": "Poveži",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 666,
+    "sr": "Poveži i pokreni praćenje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 667,
+    "sr": "Povežite vozilo da bi se GPS automatski pripremio.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 668,
+    "sr": "Početak",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 669,
+    "sr": "Početak vožnje; rane tačke pridružene vožnji",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 670,
+    "sr": "Početna",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 671,
+    "sr": "Pošalji merenja za analizu",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 672,
+    "sr": "Praćenje je zaustavljeno",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 673,
+    "sr": "Praćenje je zaustavljeno, ali podešavanje automatskog povezivanja nije sačuvano. Pokušajte ponovo.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 674,
+    "sr": "Praćenje nije pokrenuto",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 675,
+    "sr": "Praćenje će se zaustaviti. Brišu se snimljena očitavanja, vožnje, GPS putanje, punjenja, ručni zapisi i privremeni ZIP fajlovi aplikacije. Poslednje očitavanje za proračun i podešavanja ostaju sačuvani. Za kopiju prvo izvezi ZIP.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 676,
+    "sr": "Pre/posle BMS: {0} → {1} • SOC {2} → {3} %",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 677,
+    "sr": "Precizna lokacija nije odobrena",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 678,
+    "sr": "Predugačak OBD odgovor",
+    "files": [
+      "BatteryReader.kt"
+    ]
+  },
+  {
+    "id": 679,
+    "sr": "Prekini OBD vezu i GPS",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 680,
+    "sr": "Preklop: svaki signal je skaliran od 0 do 100% svog raspona u ovom intervalu. Tačne vrednosti su ispod.",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 681,
+    "sr": "Preklopi",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 682,
+    "sr": "Preklopi signale",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 683,
+    "sr": "Preostala energija",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 684,
+    "sr": "Preostale datoteke: ",
+    "files": [
+      "MeasurementStorage.kt"
+    ]
+  },
+  {
+    "id": 685,
+    "sr": "Pretraga mape",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 686,
+    "sr": "Pretraga nije učitana. Zatvori i otvori ponovo.",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 687,
+    "sr": "Pretražujem…",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 688,
+    "sr": "Prevuci nagore za objašnjenja i izvore ↓",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 689,
+    "sr": "Pređeno (km)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 690,
+    "sr": "Pri {0} kW i 90% efikasnosti: oko {1} min",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 691,
+    "sr": "Prikazan je najmanji SOH grupe u bloku.",
+    "files": [
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 692,
+    "sr": "Prikazan je najniži napon grupe u bloku.",
+    "files": [
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 693,
+    "sr": "Prikazana je najviša temperatura tri sonde u bloku.",
+    "files": [
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 694,
+    "sr": "Prikazano je poslednje očitavanje brojača; osvežava se ređe od trenutnih vrednosti.",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 695,
+    "sr": "Prikaži celu mapu",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 696,
+    "sr": "Prikaži celu rutu",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 697,
+    "sr": "Prikaži manje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 698,
+    "sr": "Prikaži sve BMS i GPS signale",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 699,
+    "sr": "Prikaži svih {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 700,
+    "sr": "Priključci do mreže puteva · početak {0} m, ",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 701,
+    "sr": "Priključci nisu navedeni u katalogu.",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 702,
+    "sr": "Priključci nisu upisani",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 703,
+    "sr": "Priključen",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 704,
+    "sr": "Priključen kabl ne potvrđuje da punjenje trenutno teče.",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 705,
+    "sr": "Primer pojedinačnih grupa",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 706,
+    "sr": "Primljena energija (kWh)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 707,
+    "sr": "Pristup za korisnike objekta.",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 708,
+    "sr": "Procena dometa",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 709,
+    "sr": "Procena dometa · rezerva {0}%",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 710,
+    "sr": "Procena koristi ",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 711,
+    "sr": "Procena preostale energije (D865)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 712,
+    "sr": "Procena rute",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 713,
+    "sr": "Procenat se dobija linearnom interpolacijom između susednih tačaka izabranog modela. Prikazani napon i procenat koriste isto očitavanje. Izvan dostupnog raspona modela prikazuje se crtica.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 714,
+    "sr": "Procenjeni kapacitet: {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 715,
+    "sr": "Profil planirane rute",
+    "files": [
+      "PlannedElevation.kt"
+    ]
+  },
+  {
+    "id": 716,
+    "sr": "Profil visine",
+    "files": [
+      "PlannedElevation.kt",
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 717,
+    "sr": "Profil će se pojaviti kada GPS zabeleži bar dve tačke sa visinom.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 718,
+    "sr": "Promena D865 procene",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 719,
+    "sr": "Promena SOC",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 720,
+    "sr": "Promena preostale BMS energije: {0} (zaseban pokazatelj)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 721,
+    "sr": "Promena vozila nije uspela: {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 722,
+    "sr": "Promena završava OBD vezu. Zatim poveži adapter u izabranom vozilu. Za Zoe R110 ZE40 proveri fazu: redizajn 2019. koristi drugi protokol. Izaberi stvarno ugrađenu bateriju; godina registracije sama nije dovoljna.",
+    "files": [
+      "VehiclePicker.kt"
+    ]
+  },
+  {
+    "id": 723,
+    "sr": "Proračun rute",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 724,
+    "sr": "Prosek",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 725,
+    "sr": "Prosek po pređenom putu %.1f kWh/100 km · %.0f km iz %d vožnji",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 726,
+    "sr": "Prosečna temperatura baterije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 727,
+    "sr": "Proveri Bluetooth adapter",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 728,
+    "sr": "Proverite brojeve i jedinice.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 729,
+    "sr": "Prva visina",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 730,
+    "sr": "Punjač: podaci nisu očitani.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 731,
+    "sr": "Punjač: {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 732,
+    "sr": "Punjači",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 733,
+    "sr": "Punjači na ovoj lokaciji",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 734,
+    "sr": "Punjenje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 735,
+    "sr": "Punjenje menja napon.",
+    "files": [
+      "PackSocDisplay.kt"
+    ]
+  },
+  {
+    "id": 736,
+    "sr": "Punjenje • BMS",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 737,
+    "sr": "Put je pronađen. Proračun za ovu deonicu nije dostupan.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 738,
+    "sr": "Putanja",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 739,
+    "sr": "Putanja ima {0} prekida; GPS dužina nije ukupna dužina vožnje.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 740,
+    "sr": "Putanja se snima",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 741,
+    "sr": "Putanja će se pojaviti kada GPS zabeleži bar dve tačke.",
+    "files": [
+      "TripVisuals.kt"
+    ]
+  },
+  {
+    "id": 742,
+    "sr": "Putanja • istorija",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 743,
+    "sr": "Putanja • uživo",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 744,
+    "sr": "Putem do 0%",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 745,
+    "sr": "Putem do rezerve",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 746,
+    "sr": "Putem {0} km\n{1}\n\n{2}",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 747,
+    "sr": "Putem ≈ %.0f km",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 748,
+    "sr": "Q210",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 749,
+    "sr": "Q90 ZE40",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 750,
+    "sr": "R110 ZE40",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 751,
+    "sr": "R110 ZE50",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 752,
+    "sr": "R135 ZE50",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 753,
+    "sr": "R240",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 754,
+    "sr": "R75 ZE40",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 755,
+    "sr": "R90 ZE40",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 756,
+    "sr": "REKUPERACIJA",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 757,
+    "sr": "REZERVA {0}% · PROCENA",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 758,
+    "sr": "RS",
+    "files": [
+      "DriveConsumptionVisuals.kt",
+      "MainActivity.kt",
+      "MapRange.kt",
+      "MetricHelp.kt",
+      "PlannedElevation.kt",
+      "RouteCharging.kt",
+      "RouteEnergy.kt",
+      "SerbiaMap.kt",
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 759,
+    "sr": "Radno vreme {0}",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 760,
+    "sr": "Rashladna tečnost",
+    "files": [
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 761,
+    "sr": "Raspodela napona po grupama",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 762,
+    "sr": "Razlika",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 763,
+    "sr": "Razlika između najveće i najmanje vrednosti u istom skupu očitavanja. Za napone se razlika pretvara iz V u mV množenjem sa 1.000.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 764,
+    "sr": "Razlika između najvišeg i najnižeg napona grupe iz istog skupa očitavanja, pomnožena sa 1.000 da se dobije mV. Poređenje pri maloj struji i sličnoj temperaturi je najkorisnije za praćenje balansa.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 765,
+    "sr": "Razlika ćelija",
+    "files": [
+      "MainActivity.kt",
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 766,
+    "sr": "Razlika: {0} • efikasnost ≈ {1}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 767,
+    "sr": "Računam profil puta i potrošnju…",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 768,
+    "sr": "Računam put do odredišta…",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 769,
+    "sr": "Računam veličinu…",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 770,
+    "sr": "Referentna OCV kriva LG M50 na 25 °C, iz modela Chen2020. Dosadašnja podrazumevana skala.",
+    "files": [
+      "VoltageSocModels.kt"
+    ]
+  },
+  {
+    "id": 771,
+    "sr": "Rekuperacija",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 772,
+    "sr": "Relativni raspon (%)",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 773,
+    "sr": "Renault",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 774,
+    "sr": "Rezerva pri dolasku: {0}%",
+    "files": [
+      "RangeSettingsDialog.kt"
+    ]
+  },
+  {
+    "id": 775,
+    "sr": "Režim snimanja nije sačuvan.",
+    "files": [
+      "MeasurementStorage.kt"
+    ]
+  },
+  {
+    "id": 776,
+    "sr": "Ručni zapis: {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 777,
+    "sr": "S2P1",
+    "files": [
+      "OfflineAtlas.kt"
+    ]
+  },
+  {
+    "id": 778,
+    "sr": "SI",
+    "files": [
+      "WeatherTracker.kt"
+    ]
+  },
+  {
+    "id": 779,
+    "sr": "SOC",
+    "files": [
+      "MainActivity.kt",
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 780,
+    "sr": "SOC (%)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 781,
+    "sr": "SOC +{0}% • promena procene preostale energije {1}. BMS nije merio punjenje između dva očitavanja.{2}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 782,
+    "sr": "SOC i srednji napon",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 783,
+    "sr": "SOC increase during OBD gap; charging inferred, not directly observed",
+    "files": [
+      "ChargeGapMonitor.kt"
+    ]
+  },
+  {
+    "id": 784,
+    "sr": "SOC modela (%)",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 785,
+    "sr": "SOC očitava sistem vozila. Njegova skala prikazuje upotrebljivi opseg baterije. BMS koristi napon, protok struje i svoj model baterije. Gornji i donji bafer za ovaj primerak vozila još nisu zasebno utvrđeni.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 786,
+    "sr": "SOC po naponu",
+    "files": [
+      "MainActivity.kt",
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 787,
+    "sr": "SOC po naponu i dijagram",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 788,
+    "sr": "SOC porast (%)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 789,
+    "sr": "SOC vozila %.1f %% · rezerva %d %%",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 790,
+    "sr": "SOC vozila {0} %",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 791,
+    "sr": "SOC {0}% • {1} kWh • {2} V • {3} °C",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 792,
+    "sr": "SOH",
+    "files": [
+      "IndexedPackPanel.kt",
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 793,
+    "sr": "SOH (BMS)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 794,
+    "sr": "SOH je procena zdravlja koju vraća BMS, izražena u odnosu na njegov referentni kapacitet. Na procenu utiču temperatura, prethodni ciklusi i kalibracija BMS-a. Vrednost za ćelijsku grupu odnosi se na par paralelno povezanih ćelija. Za procenu stvarno dostupne energije koristi se zabeležena vožnja ili kontrolisani test.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 795,
+    "sr": "SOH paketa",
+    "files": [
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 796,
+    "sr": "SOH paketa: {0}",
+    "files": [
+      "IndexedPackPanel.kt"
+    ]
+  },
+  {
+    "id": 797,
+    "sr": "SOH pojedinačnih grupa • BMS",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 798,
+    "sr": "SOH · paket",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 799,
+    "sr": "SOH: {0} • {1}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 800,
+    "sr": "SRBIJA",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 801,
+    "sr": "SZ",
+    "files": [
+      "WeatherTracker.kt"
+    ]
+  },
+  {
+    "id": 802,
+    "sr": "Sakrij izbor signala",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 803,
+    "sr": "Samo snimljene GPS visine • prekidi nisu spojeni",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 804,
+    "sr": "Satelit",
+    "files": [
+      "MapControls.kt"
+    ]
+  },
+  {
+    "id": 805,
+    "sr": "Satelit · ESA WorldCover 2021. Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium. RGB kompozit je pripremljen u više rezolucija. Svaki piksel najdetaljnijeg sloja u Srbiji predstavlja oko 20–27 m.\n\nGranice · Natural Earth. Naselja · GeoNames, CC BY 4.0 (creativecommons.org/licenses/by/4.0/).\n\nPutevi · © OpenStreetMap contributors, ODbL 1.0 (openstreetmap.org/copyright), izvodi Geofabrik iz novembra 2026.\n\nVisine · Copernicus DEM GLO-90, prerađen u bojeni sloj. Contains modified Copernicus data (2019).",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 806,
+    "sr": "Sačekajte signal na otvorenom. Slabe i stare lokacije se ne upisuju u putanju.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 807,
+    "sr": "Sačuvaj gume",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 808,
+    "sr": "Sačuvaj merenje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 809,
+    "sr": "Sačuvaj očitavanje punjača",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 810,
+    "sr": "Sačuvaj {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 811,
+    "sr": "Sačuvano.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 812,
+    "sr": "Sesija {0} • SOC {1} → {2} %",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 813,
+    "sr": "SetJavaScriptEnabled",
+    "files": [
+      "PackViewerActivity.kt"
+    ]
+  },
+  {
+    "id": 814,
+    "sr": "Sidra nisu dovoljno bliska ili monotona.",
+    "files": [
+      "VoltageSocCalibration.kt"
+    ]
+  },
+  {
+    "id": 815,
+    "sr": "Signal spreman; čekam kretanje, lokacije se ne čuvaju",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 816,
+    "sr": "Sirovi brojač D412 (W0)",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 817,
+    "sr": "Siva: tačke bez GPS visine",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 818,
+    "sr": "Slojevi mape",
+    "files": [
+      "MapControls.kt"
+    ]
+  },
+  {
+    "id": 819,
+    "sr": "Snaga",
+    "files": [
+      "MainActivity.kt",
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 820,
+    "sr": "Snaga (V × A)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 821,
+    "sr": "Snaga baterije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 822,
+    "sr": "Snaga baterije se računa kao napon × struja ÷ 1.000, u kW. Pozitivna vrednost označava potrošnju, negativna ulaz energije. Posebno očitana snaga motora može odstupati jer baterija napaja i druge uređaje.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 823,
+    "sr": "Snaga motora",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 824,
+    "sr": "Snaga priključka do {0} kW",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 825,
+    "sr": "Sneg",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 826,
+    "sr": "Snimanje isključeno",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 827,
+    "sr": "Snimanje merenja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 828,
+    "sr": "Snimanje uključeno",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 829,
+    "sr": "Snimljene sesije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 830,
+    "sr": "Sonda {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 831,
+    "sr": "Sonda {0} · {1}",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 832,
+    "sr": "Sonde",
+    "files": [
+      "IndexedPackPanel.kt"
+    ]
+  },
+  {
+    "id": 833,
+    "sr": "Sonde · logički indeksi",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 834,
+    "sr": "Sonde: {0} • {1}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 835,
+    "sr": "Spolja",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 836,
+    "sr": "Spoljašnji uslovi",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 837,
+    "sr": "Spoljna temp.",
+    "files": [
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 838,
+    "sr": "Spoljna temperatura",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 839,
+    "sr": "Srbija",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 840,
+    "sr": "Srednja brzina",
+    "files": [
+      "DriveConsumptionVisuals.kt"
+    ]
+  },
+  {
+    "id": 841,
+    "sr": "Srednji napon D43D/D440 nije svež.",
+    "files": [
+      "VoltageSocCalibration.kt"
+    ]
+  },
+  {
+    "id": 842,
+    "sr": "Srednji napon grupe",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 843,
+    "sr": "Srednji napon iz BMS-a ili aritmetički prosek kompletnog niza grupa (108 kod e-CMP, 96 kod Zoe). Izbor koristi novije dostupno očitavanje. Ako oba nedostaju, za naponsku procenu može se koristiti napon paketa podeljen brojem serijskih grupa izabranog vozila. Izvor i vreme su navedeni u opisu SOC-a po naponu.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 844,
+    "sr": "Srednji napon {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 845,
+    "sr": "Srednji napon ćelija",
+    "files": [
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 846,
+    "sr": "Stanje baterije • BMS",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 847,
+    "sr": "Stanje baterije • primer",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 848,
+    "sr": "Stanje napunjenosti",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 849,
+    "sr": "Stellantis e-CMP · 50 kWh",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 850,
+    "sr": "Stellantis: izvor e-CMP protokola",
+    "files": [
+      "VehiclePicker.kt"
+    ]
+  },
+  {
+    "id": 851,
+    "sr": "Struja",
+    "files": [
+      "MainActivity.kt",
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 852,
+    "sr": "Struja baterije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 853,
+    "sr": "Struja visokonaponske baterije je očitavanje BMS-a. U ovoj aplikaciji pozitivan smer označava pražnjenje, a negativan punjenje ili rekuperaciju.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 854,
+    "sr": "Svaka tačka je jedna stvarna vožnja. Srednja brzina uključuje stajanja; za kratke vožnje ispod 3 km odnos nije prikazan.",
+    "files": [
+      "DriveConsumptionVisuals.kt"
+    ]
+  },
+  {
+    "id": 855,
+    "sr": "Sve",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 856,
+    "sr": "TEMPERATURA",
+    "files": [
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 857,
+    "sr": "TEMPERATURE",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 858,
+    "sr": "Tačka modela · dodirni krivu",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 859,
+    "sr": "Tačke ove vožnje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 860,
+    "sr": "Tačnost ±{0} m • pre {1} s",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 861,
+    "sr": "Telefon nema Bluetooth",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 862,
+    "sr": "Telefon nema GPS prijemnik",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 863,
+    "sr": "Temp. baterije",
+    "files": [
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 864,
+    "sr": "Temp. sonde",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 865,
+    "sr": "Temperatura",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 866,
+    "sr": "Temperatura baterije (°C)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 867,
+    "sr": "Temperatura invertera je starija od 2 min.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 868,
+    "sr": "Temperatura izvan opsega 10–35 °C ili nije dostupna.",
+    "files": [
+      "VoltageSocCalibration.kt"
+    ]
+  },
+  {
+    "id": 869,
+    "sr": "Temperatura je očitana iz odgovarajućeg senzora vozila. Baterija koristi 54 sonde. Prosek, minimum i maksimum obuhvataju očitanja koja je BMS vratio. Broj sonde označava njen logički redosled.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 870,
+    "sr": "Temperatura vozila",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 871,
+    "sr": "Temperature 54 sondi još nisu očitane (D442).",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 872,
+    "sr": "Temperature po sondi",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 873,
+    "sr": "Temperature sondi: prethodni ciklus je stariji od 2 min.",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 874,
+    "sr": "Temperature vozila",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 875,
+    "sr": "Temperaturne sonde • BMS",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 876,
+    "sr": "Temperaturni raspon",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 877,
+    "sr": "Termička mapa • primer",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 878,
+    "sr": "Test baterije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 879,
+    "sr": "Tečnost · grejanje",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt",
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 880,
+    "sr": "Tečnost · pogon",
+    "files": [
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 881,
+    "sr": "Tečnost · pogonski krug",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 882,
+    "sr": "Tečnost · ulaz u motor",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 883,
+    "sr": "Tip i dimenzija guma ne stižu preko potvrđenih OBD parametara. Unesite ih jednom; ažurirajte posle zamene.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 884,
+    "sr": "Toplije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 885,
+    "sr": "Traži mesto ili punjač",
+    "files": [
+      "MapControls.kt"
+    ]
+  },
+  {
+    "id": 886,
+    "sr": "Tražim GPS signal",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 887,
+    "sr": "Trenutna snaga",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 888,
+    "sr": "Trenutna snaga baterije: {0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 889,
+    "sr": "Trip end precedes start",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 890,
+    "sr": "Trip id is required",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 891,
+    "sr": "Type 2",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 892,
+    "sr": "U sačuvanoj istoriji aplikacije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 893,
+    "sr": "U toku: {0}% SOC • {1} kWh",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 894,
+    "sr": "UTF-8",
+    "files": [
+      "PackViewerActivity.kt"
+    ]
+  },
+  {
+    "id": 895,
+    "sr": "UVEĆAJ ↗",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 896,
+    "sr": "Udeo trajanja sesije sa dovoljno čestim očitavanjima napona i struje za integraciju energije. Veća pokrivenost daje potpuniji zbir.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 897,
+    "sr": "Udeo vremena odabrane vožnje pokriven kvalitetnim GPS očitavanjima. Prekidi duži od 30 sekundi prekidaju liniju putanje. GPS prestaje da se prati po završetku vožnje ili prekidu veze sa vozilom.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 898,
+    "sr": "Ugrađeni punjač",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 899,
+    "sr": "Uključi snimanje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 900,
+    "sr": "Uključite Bluetooth i uparite OBD u podešavanjima telefona",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 901,
+    "sr": "Ukloni",
+    "files": [
+      "MapNavigationControls.kt",
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 902,
+    "sr": "Ukupni brojači baterije",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 903,
+    "sr": "Ukupno km",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 904,
+    "sr": "Ukupno vožnji",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 905,
+    "sr": "Ukupno {0} km · vožnja ≈ {1} min · punjenje {2}\n\n",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 906,
+    "sr": "Ulice · © OpenStreetMap contributors, ODbL 1.0. Punjači · OSM, Open Charge Map (CC BY 4.0), otvoreni BlokVolt katalog (ODbL) i pojedinačne lokalne dopune. Katalog dopunjen 15.11.2026; izvor i datum svakog unosa su na kartici. Zelena: energija označena kao besplatna; plava: naplata ili nepoznata cena. Plan puta radi u mreži Srbije; dostupnost i cena nisu podaci uživo.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 907,
+    "sr": "Umanji dijagram",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 908,
+    "sr": "Umanji mapu",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 909,
+    "sr": "Unassigned {0} #{1}",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 910,
+    "sr": "Unesite bar dva merenja za proračun.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 911,
+    "sr": "Unesite broj u kWh sa ekrana punjača.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 912,
+    "sr": "Unesite pozitivne brojeve u navedenim jedinicama.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 913,
+    "sr": "Unesite vrednosti iz Pelican/OBD aplikacije.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 914,
+    "sr": "Unos je sa displeja punjača; BMS ga ne očitava automatski.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 915,
+    "sr": "Unutrašnji otpor",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 916,
+    "sr": "Uparite Android-Vlink u podešavanjima telefona (PIN 1234)",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 917,
+    "sr": "Upiši naziv mesta. Polazak i cilj možeš izabrati i dodirom na mapu.",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 918,
+    "sr": "Uporedi snimljene vožnje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 919,
+    "sr": "User-Agent",
+    "files": [
+      "RouteWind.kt",
+      "WeatherTracker.kt"
+    ]
+  },
+  {
+    "id": 920,
+    "sr": "Uslovi pristupa nisu upisani.",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 921,
+    "sr": "Uspon ↑ {0} m   Pad ↓ {1} m",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 922,
+    "sr": "Uspon ↑ {0} m · pad ↓ {1} m",
+    "files": [
+      "PlannedElevation.kt",
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 923,
+    "sr": "Uvećaj dijagram",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 924,
+    "sr": "Uvećaj mapu",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 925,
+    "sr": "Uvećaj model",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 926,
+    "sr": "Uvećaj sliku, pomeri je i izaberi modul za stvarnu fotografiju i očitavanja ćelijskih parova.",
+    "files": [
+      "PackMap.kt"
+    ]
+  },
+  {
+    "id": 927,
+    "sr": "Učitavam punjače…",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 928,
+    "sr": "UŽIVO",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 929,
+    "sr": "VCU",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 930,
+    "sr": "VCU temperature su starije od 2 min.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 931,
+    "sr": "VCU: dodatne temperature nisu očitane.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 932,
+    "sr": "VOŽNJA",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 933,
+    "sr": "Van offline obuhvata",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 934,
+    "sr": "Van offline visinskog obuhvata",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 935,
+    "sr": "Vetar",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 936,
+    "sr": "Vetar · nema dostupne prognoze na trasi. Uticaj vetra nije uračunat.",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 937,
+    "sr": "Vetar · {0} km/h, {1}. Prosečna {2}. ",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 938,
+    "sr": "Visina terena",
+    "files": [
+      "MapControls.kt"
+    ]
+  },
+  {
+    "id": 939,
+    "sr": "Visina terena (m) · dodirni profil",
+    "files": [
+      "PlannedElevation.kt"
+    ]
+  },
+  {
+    "id": 940,
+    "sr": "Visine nisu potpune; uspon i pad nisu uračunati.",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 941,
+    "sr": "Visine · dostupno za {0}% trase. Uspon i pad nisu uračunati.",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 942,
+    "sr": "Više",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 943,
+    "sr": "Vmin • ćelija",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 944,
+    "sr": "Vodi do punjača",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 945,
+    "sr": "Vozilo ima CCS priključak za DC punjenje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 946,
+    "sr": "Vozilo • uživo",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 947,
+    "sr": "Vožnja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 948,
+    "sr": "Vožnja se snima",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 949,
+    "sr": "Vožnja • merenje uživo",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 950,
+    "sr": "Vrati 20%",
+    "files": [
+      "RangeSettingsDialog.kt"
+    ]
+  },
+  {
+    "id": 951,
+    "sr": "Vraćeno",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 952,
+    "sr": "Vrednost sonde: {0}. ",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 953,
+    "sr": "Vreme vožnje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 954,
+    "sr": "Vreme: Open-Meteo model na lokaciji tokom vožnje {0} • CC BY 4.0. Vetar je prognoza, ne senzor vozila.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 955,
+    "sr": "Vrsta nepoznata",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 956,
+    "sr": "V×I i brzina iz BMS-a; rastojanje unutar deonice procenjeno iz brzine. Prikazuju se samo intervali sa svežim podacima i brzinom ≥10 km/h. Stajanje i prekidi nisu povezani.",
+    "files": [
+      "DriveConsumptionVisuals.kt"
+    ]
+  },
+  {
+    "id": 957,
+    "sr": "Wikimedia Commons, umanjena fotografija; ilustracija modela i generacije, ne dokaz opreme ili baterije.",
+    "files": [
+      "VehiclePicker.kt"
+    ]
+  },
+  {
+    "id": 958,
+    "sr": "ZATVORI",
+    "files": [
+      "ChartExplorer.kt",
+      "MainActivity.kt",
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 959,
+    "sr": "ZAVRŠI VOŽNJU I GPS",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 960,
+    "sr": "Za e-208",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 961,
+    "sr": "Za energiju je potrebna zabeležena potrošnja.",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 962,
+    "sr": "Za iCar Pro 2S izaberite Android-Vlink",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 963,
+    "sr": "Za izabrane parametre potrebna su najmanje dva stvarna očitavanja.",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 964,
+    "sr": "Za krugove izaberi polazak ili sačekaj GPS poziciju.",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 965,
+    "sr": "Za ovu vožnju nema sačuvanih GPS tačaka.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 966,
+    "sr": "Za plan bez GPS-a odaberi polazak ovde, pa dodirni odredište.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 967,
+    "sr": "Za pouzdaniji test zabeležite jedno neprekinuto punjenje sa većom promenom SOC, po mogućstvu od oko 20% do 80%. Aplikacija sama računa rezultat kada ima dovoljno podataka.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 968,
+    "sr": "Za pouzdano poređenje potrebna je ≥90% pokrivenost BMS očitavanjima tokom celog punjenja.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 969,
+    "sr": "Za procenu kapaciteta potrebna su dva merenja istog ciklusa, sa promenom SOC od bar 10% i saglasnom promenom BMS energije.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 970,
+    "sr": "Za procenu kapaciteta potrebno je punjenje sa promenom SOC od bar 10% i stabilnom temperaturom.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 971,
+    "sr": "Za trend treba bar dve deonice kretanja sa pouzdanom brzinom i snagom. Ukupna potrošnja vožnje je prikazana iznad kada je potvrđena.",
+    "files": [
+      "DriveConsumptionVisuals.kt"
+    ]
+  },
+  {
+    "id": 972,
+    "sr": "Zastarelo · {0} · {1}",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 973,
+    "sr": "Zatvori",
+    "files": [
+      "MapControls.kt",
+      "MapNavigationControls.kt",
+      "MetricHelp.kt",
+      "RangeSettingsDialog.kt",
+      "VehiclePicker.kt"
+    ]
+  },
+  {
+    "id": 974,
+    "sr": "Zatvori SOC po naponu",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 975,
+    "sr": "Zatvori dijagram",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 976,
+    "sr": "Zatvori mapu",
+    "files": [
+      "MapControls.kt"
+    ]
+  },
+  {
+    "id": 977,
+    "sr": "Zatvori uvećani model",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 978,
+    "sr": "Zaustavi praćenje i izađi iz aplikacije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 979,
+    "sr": "Zbir izmerene energije obuhvata vreme sa dostupnim BMS podacima. Pri prekidima predstavlja donju granicu energije koja je ušla u bateriju. Porast SOC pre i posle prekida čuva se posebno kao procenjen događaj.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 980,
+    "sr": "Zbir napona grupa",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 981,
+    "sr": "Značenje D412 nije potvrđeno. Poslednji upit: {0}.",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 982,
+    "sr": "Zoe",
+    "files": [
+      "IndexedPackPanel.kt"
+    ]
+  },
+  {
+    "id": 983,
+    "sr": "Zoe AC · 22 kW",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 984,
+    "sr": "Zoe faza 1 · CAN 11-bit",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 985,
+    "sr": "Zoe faza 2 · CAN 29-bit",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 986,
+    "sr": "Zoe {0}",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 987,
+    "sr": "Zoe {0}: nema osnovnog odgovora. Proveri izabranu generaciju i kontakt vozila.",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 988,
+    "sr": "Zoe: adapter nije prihvatio {0}",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 989,
+    "sr": "Zoe: izvor protokola CanZE",
+    "files": [
+      "VehiclePicker.kt"
+    ]
+  },
+  {
+    "id": 990,
+    "sr": "Zoe: prikazan je stvarni SOC koji prijavljuje vozilo. Za ovu bateriju nije uključen potvrđen naponski model. Srednji napon: {0}. SOH paketa nije SOH pojedinačnih grupa.",
+    "files": [
+      "PackSocDisplay.kt"
+    ]
+  },
+  {
+    "id": 991,
+    "sr": "Zoe: {0} upita bez validnog odgovora; nepoznata polja ostaju prazna.",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 992,
+    "sr": "[0-9A-Fa-f]{4}",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 993,
+    "sr": "[^A-Za-z0-9._-]",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 994,
+    "sr": "adapter se nije povezao ({0})",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 995,
+    "sr": "baterija max",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 996,
+    "sr": "baterija min",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 997,
+    "sr": "baterija ·",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 998,
+    "sr": "broj punjenja",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 999,
+    "sr": "bruto potrošeno",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1000,
+    "sr": "brzina vozila",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1001,
+    "sr": "brzo · dc",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1002,
+    "sr": "charge-{0}",
+    "files": [
+      "ChargeMonitor.kt"
+    ]
+  },
+  {
+    "id": 1003,
+    "sr": "cilj {0} m. Izvan obračuna.",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 1004,
+    "sr": "contours/{0}/{1}_{2}.ctz",
+    "files": [
+      "OfflineContours.kt"
+    ]
+  },
+  {
+    "id": 1005,
+    "sr": "dd.MM. HH:mm",
+    "files": [
+      "ChargingPlanner.kt",
+      "DriveConsumptionVisuals.kt",
+      "MapRange.kt",
+      "RouteEnergy.kt",
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 1006,
+    "sr": "dd.MM. HH:mm:ss",
+    "files": [
+      "ChartExplorer.kt",
+      "IndexedPackPanel.kt"
+    ]
+  },
+  {
+    "id": 1007,
+    "sr": "dd.MM.yyyy HH:mm",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1008,
+    "sr": "dd.MM.yyyy HH:mm:ss",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1009,
+    "sr": "državni put",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 1010,
+    "sr": "e-CMP profil čita 108 serijskih grupa i 54 temperaturne sonde; Zoe profil čita 96 grupa i 12 sondi. BMS meri zajednički napon paralelnog para. Prikazuje se samo kompletan primljen niz za proračun proseka.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1011,
+    "sr": "e208-battery-lab/2 (weather observations)",
+    "files": [
+      "WeatherTracker.kt"
+    ]
+  },
+  {
+    "id": 1012,
+    "sr": "e208-merenje-{0}.zip",
+    "files": [
+      "TelemetryStore.kt"
+    ]
+  },
+  {
+    "id": 1013,
+    "sr": "faza 1",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 1014,
+    "sr": "faza 2",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 1015,
+    "sr": "gap-{0}",
+    "files": [
+      "ChargeGapMonitor.kt"
+    ]
+  },
+  {
+    "id": 1016,
+    "sr": "glavni brzi pravac",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 1017,
+    "sr": "gps brzina",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1018,
+    "sr": "gps pokrivenost",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1019,
+    "sr": "gps-{0}.csv",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 1020,
+    "sr": "gps-{0}.gpx",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 1021,
+    "sr": "integracija V×I",
+    "files": [
+      "TripMonitor.kt"
+    ]
+  },
+  {
+    "id": 1022,
+    "sr": "isteklo 12 s",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 1023,
+    "sr": "iz BMS energije i SOC-a",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 1024,
+    "sr": "iz poslednje vožnje",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 1025,
+    "sr": "iz pravca {0}",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 1026,
+    "sr": "iz punjenja",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 1027,
+    "sr": "iz vožnji",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 1028,
+    "sr": "kWh/100 km",
+    "files": [
+      "DriveConsumptionVisuals.kt"
+    ]
+  },
+  {
+    "id": 1029,
+    "sr": "leđna",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 1030,
+    "sr": "lokalni put",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 1031,
+    "sr": "manual charger display",
+    "files": [
+      "ChargerMeterStore.kt"
+    ]
+  },
+  {
+    "id": 1032,
+    "sr": "manual-{0}",
+    "files": [
+      "ChargerMeterStore.kt"
+    ]
+  },
+  {
+    "id": 1033,
+    "sr": "najniža grupa",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1034,
+    "sr": "napon paketa ÷ {0}",
+    "files": [
+      "PackSocDisplay.kt"
+    ]
+  },
+  {
+    "id": 1035,
+    "sr": "nazivni kapacitet profila; procena do testa kapaciteta",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 1036,
+    "sr": "nedovoljno podataka",
+    "files": [
+      "TripMonitor.kt"
+    ]
+  },
+  {
+    "id": 1037,
+    "sr": "nema dovoljno podataka",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 1038,
+    "sr": "nema odgovora",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 1039,
+    "sr": "neto energij",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1040,
+    "sr": "npr. letnje 195/55 R16",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1041,
+    "sr": "obično · ac",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1042,
+    "sr": "pack/{0}",
+    "files": [
+      "PackViewerActivity.kt"
+    ]
+  },
+  {
+    "id": 1043,
+    "sr": "package:{0}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1044,
+    "sr": "potrošnj",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1045,
+    "sr": "praćenje zaustavljeno",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 1046,
+    "sr": "pre {0} h",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1047,
+    "sr": "pre {0} min",
+    "files": [
+      "ExtraSensorPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1048,
+    "sr": "pre {0} s",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 1049,
+    "sr": "prekid OBD veze",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 1050,
+    "sr": "prekid telemetrije",
+    "files": [
+      "TripMonitor.kt"
+    ]
+  },
+  {
+    "id": 1051,
+    "sr": "promenljiv smer",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 1052,
+    "sr": "prosek {0} grupa",
+    "files": [
+      "PackSocDisplay.kt"
+    ]
+  },
+  {
+    "id": 1053,
+    "sr": "punjač",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 1054,
+    "sr": "renault_zoe_{0}",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 1055,
+    "sr": "ručno završeno",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 1056,
+    "sr": "serijskih grupa",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1057,
+    "sr": "snimanje isključeno",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 1058,
+    "sr": "sporedni put",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 1059,
+    "sr": "srednji napon",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1060,
+    "sr": "srednji napon BMS",
+    "files": [
+      "PackSocDisplay.kt"
+    ]
+  },
+  {
+    "id": 1061,
+    "sr": "stanje napunjenosti",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1062,
+    "sr": "streets/{0}_{1}.atlasdata",
+    "files": [
+      "OfflineAtlas.kt"
+    ]
+  },
+  {
+    "id": 1063,
+    "sr": "temp. sonde",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1064,
+    "sr": "time_utc,latitude,longitude,altitude_m,speed_m_s,accuracy_m\n",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 1065,
+    "sr": "trip-{0}",
+    "files": [
+      "TripMonitor.kt"
+    ]
+  },
+  {
+    "id": 1066,
+    "sr": "trip-{0}-{1}.gpx",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 1067,
+    "sr": "u toku",
+    "files": [
+      "MainActivity.kt",
+      "TripMonitor.kt"
+    ]
+  },
+  {
+    "id": 1068,
+    "sr": "unknown-{0}",
+    "files": [
+      "ChargeGapMonitor.kt"
+    ]
+  },
+  {
+    "id": 1069,
+    "sr": "uzdužna komponenta <1 km/h",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 1070,
+    "sr": "vehicles/{0}",
+    "files": [
+      "VehicleProfiles.kt"
+    ]
+  },
+  {
+    "id": 1071,
+    "sr": "visina nije dostupna",
+    "files": [
+      "PlannedElevation.kt"
+    ]
+  },
+  {
+    "id": 1072,
+    "sr": "vozilo ne odgovara 120 s",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 1073,
+    "sr": "vraćeno",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1074,
+    "sr": "v×i",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1075,
+    "sr": "{0}\nPoredbena kriva druge ćelije.",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1076,
+    "sr": "{0}  ·  Promeni vozilo",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1077,
+    "sr": "{0} % · {1} V",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 1078,
+    "sr": "{0} V",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1079,
+    "sr": "{0} V → ≈ {1} %",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1080,
+    "sr": "{0} grupa",
+    "files": [
+      "IndexedPackPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1081,
+    "sr": "{0} kWh",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1082,
+    "sr": "{0} kWh • SOC +{1}%",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1083,
+    "sr": "{0} kilometara, {1}",
+    "files": [
+      "PlannedElevation.kt"
+    ]
+  },
+  {
+    "id": 1084,
+    "sr": "{0} km",
+    "files": [
+      "PlannedElevation.kt",
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 1085,
+    "sr": "{0} km · {1}",
+    "files": [
+      "PlannedElevation.kt"
+    ]
+  },
+  {
+    "id": 1086,
+    "sr": "{0} km • {1} kWh • {2} kWh/100 km",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1087,
+    "sr": "{0} komponenta {1} km/h",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 1088,
+    "sr": "{0} lokacija u offline katalogu",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 1089,
+    "sr": "{0} lokacija · katalog dopunjen 15.11.2026.\nOSM, Open Charge Map i dopune mreža. Podaci nisu uživo.",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 1090,
+    "sr": "{0} m",
+    "files": [
+      "OfflineAtlasView.kt",
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 1091,
+    "sr": "{0} min",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1092,
+    "sr": "{0} procenata, {1} volti",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 1093,
+    "sr": "{0} profila · zasebna istorija i poslednja očitavanja",
+    "files": [
+      "VehiclePicker.kt"
+    ]
+  },
+  {
+    "id": 1094,
+    "sr": "{0} serijskih grupa · redosled BMS indeksa",
+    "files": [
+      "IndexedPackPanel.kt"
+    ]
+  },
+  {
+    "id": 1095,
+    "sr": "{0} sondi",
+    "files": [
+      "IndexedPackPanel.kt",
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1096,
+    "sr": "{0} vetar ≈ {1} na poslednjem delu putanje",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1097,
+    "sr": "{0} {1} km/h",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 1098,
+    "sr": "{0} °C",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1099,
+    "sr": "{0} · Battery Lab",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 1100,
+    "sr": "{0} · očitane vrednosti",
+    "files": [
+      "ChartExplorer.kt"
+    ]
+  },
+  {
+    "id": 1101,
+    "sr": "{0} • BMS pre/posle",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1102,
+    "sr": "{0} • BMS tokom punjenja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1103,
+    "sr": "{0} • SOH {1} • Δćelija {2} • T {3}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1104,
+    "sr": "{0} • {1}% • {2} kWh • {3} min",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1105,
+    "sr": "{0} → {1} • SOC +{2}% • BMS nije dostupan tokom intervala{3}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1106,
+    "sr": "{0} → {1} • {2} bez telemetrije. Brzina i trasa nisu poznate.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1107,
+    "sr": "{0}. {1} · {2} km · ≈ {3} min",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 1108,
+    "sr": "{0}.files",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1109,
+    "sr": "{0}.tmp",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 1110,
+    "sr": "{0}/gps-events.jsonl",
+    "files": [
+      "GpsTracker.kt"
+    ]
+  },
+  {
+    "id": 1111,
+    "sr": "{0}: adapter nije prihvatio adresu ECU.",
+    "files": [
+      "ObdReader.kt"
+    ]
+  },
+  {
+    "id": 1112,
+    "sr": "{0}: {1} • ponovo za {2} s",
+    "files": [
+      "ObdService.kt"
+    ]
+  },
+  {
+    "id": 1113,
+    "sr": "°C",
+    "files": [
+      "IndexedPackPanel.kt",
+      "MainActivity.kt",
+      "OverlayTelemetryChart.kt"
+    ]
+  },
+  {
+    "id": 1114,
+    "sr": "ĆELIJE",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1115,
+    "sr": "Ćelije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1116,
+    "sr": "Ćelije: {0} • {1}",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1117,
+    "sr": "ćelije",
+    "files": [
+      "MetricHelp.kt"
+    ]
+  },
+  {
+    "id": 1118,
+    "sr": "Čeka podatke",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1119,
+    "sr": "Čeka se očitavanje SOC-a vozila.",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 1120,
+    "sr": "Čeka se podatak za procenu raspoloživog kapaciteta.",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 1121,
+    "sr": "Čeka se srednji napon grupa ili napon paketa.",
+    "files": [
+      "PackSocDisplay.kt"
+    ]
+  },
+  {
+    "id": 1122,
+    "sr": "Čeka se vožnja od najmanje 3 km sa ≥98% pokrivenosti energije.",
+    "files": [
+      "MapRange.kt"
+    ]
+  },
+  {
+    "id": 1123,
+    "sr": "Čeka sveže BMS očitavanje.",
+    "files": [
+      "PackSocDisplay.kt",
+      "VoltageSocCalibration.kt"
+    ]
+  },
+  {
+    "id": 1124,
+    "sr": "Čekam BMS očitavanja. Povežite adapter sa vozilom.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1125,
+    "sr": "Čekam GPS polazak. Detalji i podešavanja na ⓘ.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 1126,
+    "sr": "Čekam automatski zabeleženu vožnju.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1127,
+    "sr": "Čekam dovoljno očitavanja za procenu dometa.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 1128,
+    "sr": "Čekam kompletan niz: {0}.",
+    "files": [
+      "IndexedPackPanel.kt"
+    ]
+  },
+  {
+    "id": 1129,
+    "sr": "Čekam kompletne napone 96 grupa (2141/2142).",
+    "files": [
+      "ZoeObdReader.kt"
+    ]
+  },
+  {
+    "id": 1130,
+    "sr": "Čekam nova BMS očitavanja",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1131,
+    "sr": "Čekam stvarna BMS očitavanja.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1132,
+    "sr": "Čekam stvarna očitavanja iz izabranog vozila. Uparite Vlink adapter u Android podešavanjima, zatim ga izaberite na početnom ekranu.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1133,
+    "sr": "Čekam stvarni SOC iz vozila.",
+    "files": [
+      "ChargingPlanner.kt"
+    ]
+  },
+  {
+    "id": 1134,
+    "sr": "Čekam svež odgovor vozila",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1135,
+    "sr": "Čekam svežu GPS tačku",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1136,
+    "sr": "Čeoni",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1137,
+    "sr": "Čitanje mreže puteva nije uspelo. Ponovo izaberi odredište.",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 1138,
+    "sr": "Čitanje sačuvane putanje nije uspelo. Pokušajte ponovo.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1139,
+    "sr": "čeona",
+    "files": [
+      "RouteEnergy.kt"
+    ]
+  },
+  {
+    "id": 1140,
+    "sr": "Šuko",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 1141,
+    "sr": "Šuko zahteva odgovarajući prenosni EVSE. Za procenu je ograničen na 2,3 kW.",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 1142,
+    "sr": "širina ",
+    "files": [
+      "OfflineAtlasView.kt"
+    ]
+  },
+  {
+    "id": 1143,
+    "sr": "Žuto označava naponsku procenu iz očitavanja, kada je dostupna. Bela oznaka pokazuje izabranu izvornu tačku modela.",
+    "files": [
+      "VoltageSocModelPicker.kt"
+    ]
+  },
+  {
+    "id": 1144,
+    "sr": "ΔBMS energija / ΔSOC × 100 • {0} automatskih uzoraka. Procena iz energije u bateriji, bez gubitaka punjača.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1145,
+    "sr": "ΔV • ćelije",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1146,
+    "sr": "Δenergija / ΔSOC × 100. Gruba procena; validna samo za isti ciklus, uz pouzdan BMS Energy PID.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1147,
+    "sr": "— znači da ECU nije potvrdio očitavanje. Temperatura hladnjaka kao posebna sonda nije potvrđena; ulaz u motor nije isto što i hladnjak.",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1148,
+    "sr": "— znači da odgovor nije potvrđen ili je očitavanje zastarelo.",
+    "files": [
+      "ExtraSensorPanel.kt"
+    ]
+  },
+  {
+    "id": 1149,
+    "sr": "−12.3 A",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1150,
+    "sr": "−4.9 kW",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1151,
+    "sr": "≈ %.1f km vazdušno",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 1152,
+    "sr": "≈ %.1f km vazdušno od polaska",
+    "files": [
+      "MapNavigationControls.kt"
+    ]
+  },
+  {
+    "id": 1153,
+    "sr": "≈ {0} kWh",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 1154,
+    "sr": "≈ {0} min",
+    "files": [
+      "RouteCharging.kt"
+    ]
+  },
+  {
+    "id": 1155,
+    "sr": "● Baterija",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1156,
+    "sr": "● Besplatna energija",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 1157,
+    "sr": "● Ostali punjači",
+    "files": [
+      "SerbiaMap.kt"
+    ]
+  },
+  {
+    "id": 1158,
+    "sr": "● POVEZANO",
+    "files": [
+      "MainActivity.kt"
+    ]
+  },
+  {
+    "id": 1159,
+    "sr": "● Polazak     ● Poslednja GPS tačka  •  skica putanje bez mape",
+    "files": [
+      "TripVisuals.kt"
+    ]
+  },
+  {
+    "id": 1160,
+    "sr": "● {0}. {1} · {2} km",
+    "files": [
+      "PlannedElevation.kt"
+    ]
+  },
+  {
+    "id": 1161,
+    "sr": "● ČEKA VEZU",
+    "files": [
+      "MainActivity.kt"
+    ]
+  }
+]

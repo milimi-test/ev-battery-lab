@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <instrumentation
+        android:name="rs.battery.lab.GpsRegressionInstrumentation"
+        android:targetPackage="rs.battery.lab"
+        android:functionalTest="true" />
+    <instrumentation android:name="rs.battery.lab.ZoeProtocolInstrumentation"
+        android:targetPackage="rs.battery.lab" android:functionalTest="true" />
+    <instrumentation android:name="rs.battery.lab.LanguageInstrumentation" android:targetPackage="rs.battery.lab" android:functionalTest="true" />
+</manifest>
+

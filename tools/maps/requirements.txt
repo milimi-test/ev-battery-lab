@@ -1,0 +1,8 @@
+# Optional: needed only for rebuilding map data, not for compiling the Android app.
+numpy
+Pillow
+tifffile
+rasterio
+shapely
+osmium
+contourpy

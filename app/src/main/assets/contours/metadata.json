@@ -1,0 +1,109 @@
+{
+  "format": "EVC1 gzip: u32 magic, u32 count; i16 metres, u16 points, repeated u16 x/y; big-endian",
+  "source": "Packaged route-heights/*.hgtz, derived by bilinear resampling from Copernicus GLO-90 DSM",
+  "source_grid": "512x512 pixel-centred samples per degree; integer metres; 1/512 degree spacing",
+  "no_data": "Cells touching missing samples are excluded; absent square N41E018 has no contours",
+  "bounds": {
+    "west": 17,
+    "east": 25,
+    "south": 40,
+    "north": 48
+  },
+  "absent_tiles": [
+    "N41E018"
+  ],
+  "vertical_intervals_m": [
+    100,
+    500,
+    1000
+  ],
+  "minimum_drawn_level_m": 100,
+  "simplification_DEM_pixels": {
+    "100": 0.25,
+    "500": 1,
+    "1000": 2
+  },
+  "warning": "DSM surface, not surveyed ground. Do not infer 100m spatial or vertical accuracy from contour interval.",
+  "source_sha256": {
+    "N40E017.hgtz": "ec722243d06f44cdf14ce4240326e33216146dce9a9b33bc2a850e79c760a67e",
+    "N40E018.hgtz": "9e3b8e0fa9728b0e31573169a5663cfb7fef0d449cfc2bbb3174e560a451115d",
+    "N40E019.hgtz": "2ddbf2cb44be4d95efdf47c53e733e32f8fe96867f44a017a566b58291920d47",
+    "N40E020.hgtz": "975754a508ae7d61d7f7907df3e4eae41334d86e879c622123e39d2fce48f5f7",
+    "N40E021.hgtz": "ee72507b3e555b1e6f5ed9a62e1d7debbe20740ea9ed16be81a00b69cc4e9474",
+    "N40E022.hgtz": "6448807361b834faa49d6ec28d5985c21fccf646612b818650db6bcc63218f43",
+    "N40E023.hgtz": "32d11f39af0468d8c0f1603d5c6336fd7985730d31950898757b23007380e678",
+    "N40E024.hgtz": "82eb503527fba0cae040c1f4b443963e56c625b2d0190af8a13d1b80286dd2e9",
+    "N41E017.hgtz": "3e39b9044ccbcebd167e83ec0585ae8366e28bdc597ca75d7195007bb09d07b9",
+    "N41E019.hgtz": "dfaf4710050d89287ce057889f82368501613d37d625aaec8a9db7cfa5f68a29",
+    "N41E020.hgtz": "9ae4894baec0a0668aa98f4317b26dfd3a617b238576cde49595a06f2ab5a519",
+    "N41E021.hgtz": "2e07ab725fd2f387ebeae48ab303f6716cded06bc94f52a8974444f5696632df",
+    "N41E022.hgtz": "a0646698771b717804b99c4416d88b9c72f592a3725f45833553cbb45be2f7d3",
+    "N41E023.hgtz": "ff90a68ccf286c59aa9da892fd66dd259ca31914a90b123b56cba71ce26db8fb",
+    "N41E024.hgtz": "8b33c87c25e9dd775fa56ef8b7ffa2119dab5bcbd83ce2b357d9d85550b3b58c",
+    "N42E017.hgtz": "16fd3eaf27cd8aefa8789f766b8e983c514fd31ed982198f365c1fc8bcb3ccae",
+    "N42E018.hgtz": "090d9164fe545d213dc72f2d12ab4d67e010f5a8b8a384f917d3c48f1ee6df1c",
+    "N42E019.hgtz": "8e71c67f87eb56016d0d356b4662a4f9e342613b841d9d5b6db07dbfd022ba87",
+    "N42E020.hgtz": "2aecbad1bd822032506eca6ed60736f67166b5b2ce3451d7d1278247477fe9b0",
+    "N42E021.hgtz": "2bba607afde21ae18e1b49a5e06d564d7d1a881c31ea029d6ae7660cc00b2794",
+    "N42E022.hgtz": "7a8ebafeb1657d079278028f8ce5b8102ffab09758ba3af36c685ebde0a27882",
+    "N42E023.hgtz": "13f1471874c45945034c552906d9b25909bbe1fe7e375546934b721904b66703",
+    "N42E024.hgtz": "3a9ae923b93ec6d29c6e6c3a09321c321f78e2db5defbe9b085b68e3d38d0e6c",
+    "N43E017.hgtz": "b6b040cdb89f47d865b610a072361fe35cd2f73012bd2fa9d84c9bfc61e607be",
+    "N43E018.hgtz": "88369883eff1238dabeae433b562a2cd90139719e16acf6b7594d4b1ba5325f6",
+    "N43E019.hgtz": "a782144f66ab1af58bf8386ba575d8b70d52e672b171e8795ea8e6a44226d697",
+    "N43E020.hgtz": "3087ad93feaef981d2e49bf5ce13c1d9ea47d56668b855d24e0fc3f26614cd59",
+    "N43E021.hgtz": "a6d42217427015a830edaed1e1a9ea3a7b3d0453f9280bdcfd3dae17f5c0540f",
+    "N43E022.hgtz": "c8289163e4c98f43242f1e838ab10693f6f2aa9cd9995476a49ed533c7fe79bd",
+    "N43E023.hgtz": "6efe8cf6e7bedb012f4b9658f158ea577989318b6325c103f61a23be10d490bb",
+    "N43E024.hgtz": "0ae1fb323c2d5dd9e87277b9fa7f476bae1c427aeac681affd5137fcc4de0eff",
+    "N44E017.hgtz": "f535c61af19d133ddec8027fe204a15f5c38b67fec184efc565fec6b9d9ffbff",
+    "N44E018.hgtz": "4cda8c124ae6ef39067353f68929cba41a83d82b3375deccdfa21e392adebd3d",
+    "N44E019.hgtz": "095c1dd7124c49a33afd8b18638fe66e640811d7ef71d0abf31ea26a67fb13e8",
+    "N44E020.hgtz": "c623d8922fe416d91a4b436caa323b16c8ea007f76da0e1231c62c7dc7f3f048",
+    "N44E021.hgtz": "d902919cbe8ec019a4ceed8809ceb09de563d6a683c11b5e4aece1f160344248",
+    "N44E022.hgtz": "25b37bbc90a931f570ab75a0fdba1557b54a8fd150b73b4000e24c1924ce583c",
+    "N44E023.hgtz": "0c2e4cb1b15d4b3993e981808219b9744500b581a092f090105378c15f68212c",
+    "N44E024.hgtz": "05fca27bb3a04597de317e3e94b232809a8bd9e7571ebe6dac7918729cbd9d2f",
+    "N45E017.hgtz": "3fda889449b954197dace6a0eb25db0c10c3ba6c5074237acd1c69c13d3b7c78",
+    "N45E018.hgtz": "5adb7a0344037c2184b0adbf44fb165c093ce45e7bf85b3a367dc04998af4195",
+    "N45E019.hgtz": "51d3e4980c74935f95cbc514587c99f7470a1f89ac5ae9b5d05325d959395f84",
+    "N45E020.hgtz": "7315f82c77677ae28a8c54514416fac0e5cf3e1ddf1444594482faeb32ab792f",
+    "N45E021.hgtz": "66b85d94b840de4b8d0ab9ac881a9ce7fd8fe068123b35765fc683f354e47d8d",
+    "N45E022.hgtz": "2d521deb73e06b5b15e6258ee8e719fa736b7a3ad393087c1d0e1222f103f58c",
+    "N45E023.hgtz": "fe802af9e9712a283cdfa0b237fa4f8df5f7246c2502fcf1dc24c500d5b400ad",
+    "N45E024.hgtz": "60454d9dae776ec28d7766892dfe2a390e8961df84aafbb7f98f99b0d4e01ee7",
+    "N46E017.hgtz": "433b9ffc3c5de42db9a2747b7f54ab627f5c066e58d2d5a5783322b6924eea4e",
+    "N46E018.hgtz": "1205f968f23cf0cffb3502b5c8905976861b11ad9509c4a88442d903586a9006",
+    "N46E019.hgtz": "c26531b0d9878484a5660a20ca9cfbd22851c6dbc71045097f2998341b8ee957",
+    "N46E020.hgtz": "55b48a4d2f0e618aed70fe9d0820bc4dd162018d29bead3d41cd4b3f1becc6bf",
+    "N46E021.hgtz": "85785ad19160c383ce2e214ff38b81d9fc2db47f67f73f31275cec42e7f8c330",
+    "N46E022.hgtz": "f8a8c7363f145b89fd004933126a8b0be08313b5682670736662af86a90e4ea3",
+    "N46E023.hgtz": "6a272f090ad30a597234b21fe55931845307f375eb7bef0f8db49117546f2fdc",
+    "N46E024.hgtz": "30916ee3088fac4619968ffc82bca3c452ef93d958be020041bf2ef7e389ff0b",
+    "N47E017.hgtz": "f5aec9937f6b86d11bed3c3c70227905a0853a87ddcc69ba9bf4c6b0905ae178",
+    "N47E018.hgtz": "e06548b8d9fdf2955f2ae69556c2bfd243fb99c0e12897d94f3bf1871113fdea",
+    "N47E019.hgtz": "ea6fc7790729e99609f561fa4e6097752f21b0ee61646eff1c3c7d550c1e43a1",
+    "N47E020.hgtz": "3f75c680e4f7a30461680a0307d3b09f199be9463545cf4fd8e9ff19467701be",
+    "N47E021.hgtz": "a9e350793ce0425dd08bf011e9adfa59478279a73795f4cda3c25b556c8fbe90",
+    "N47E022.hgtz": "855c92ca7ff8d6cce2dd3223ac5a987ad42fc470d833f58c8860fcea420a7e52",
+    "N47E023.hgtz": "974651732071929fa11d896989c7523a394fb67ac657bf379926993f12bd8ee0",
+    "N47E024.hgtz": "f7095050bb01adb719986e97b04f85c9365e9de2d91307fddbb7280efcc96293"
+  },
+  "counts": {
+    "100": {
+      "tiles": 1008,
+      "lines": 73513,
+      "bytes": 5884912
+    },
+    "500": {
+      "tiles": 63,
+      "lines": 6728,
+      "bytes": 443206
+    },
+    "1000": {
+      "tiles": 63,
+      "lines": 2078,
+      "bytes": 110170
+    }
+  }
+}
