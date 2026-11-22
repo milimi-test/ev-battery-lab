@@ -8,6 +8,7 @@
 - Separate vehicle/test SOC charts; 4.200 V comparison marker, per-reference full/empty endpoints, voltage-to-test-SOC lookup and monthly temperature/load comparison. No unverified vehicle buffer claims.
 - 10 km/h × five-grade consumption matrix through 130 km/h with distances and evidence counts.
 - Monthly/year-filtered reporting, dated tire/HVAC editor, descriptive conditions and matched winter/summer, temperature, rain/snow and HVAC comparisons.
+- Explicit FEC terminology and editable partial-cycle calculator (two 25–75% cycles = one nominal FEC), plus recorded trip SOC-depth windows.
 - Fixed-reference energy-equivalent cycles, suspicious counter-decrease handling, reference retained-energy table and linked aging research.
 - Wind comparisons require one-to-one matching of level road segments, similar speed, location/direction, temperatures, SOC and precipitation, with explicit minimum evidence; insufficient comparisons remain blank.
 - English-first/Serbian-second motivation and documentation, report screenshots, portable Windows build script.

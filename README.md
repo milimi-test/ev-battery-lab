@@ -21,6 +21,7 @@ The report starts with all measurements together; individual and longer trips ar
 ![Consumption matrix in 10 km/h bins](docs/screenshots/analyzer-matrix.jpg)
 ![Aligned signal charts with physical units](docs/screenshots/analyzer-signals.jpg)
 ![Long-term consumption and conditions](docs/screenshots/analyzer-annual.jpg)
+![Full equivalent cycle calculator](docs/screenshots/analyzer-cycles.jpg)
 
 ### What it does
 
