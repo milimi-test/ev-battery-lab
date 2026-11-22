@@ -4,8 +4,11 @@ import argparse, bisect, csv, html, io, json, math, statistics, sys, zipfile
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+from comparisons import environment_report, overlap_energy, speed_bin
+from battery_analysis import voltage_analysis, health_analysis, references
+from long_term import load_conditions, long_term_report
 
-VERSION = '0.1.0'
+VERSION = '0.2.0'
 MAX_GAP_MS = 30_000
 FIELDS = {
     'soc_percent': ('SOC', '%'), 'soh_percent': ('Pack SOH / SOH paketa', '%'),
@@ -17,6 +20,7 @@ FIELDS = {
     'cell_voltage_max_v': ('Maximum group voltage / Najveći napon', 'V'),
     'spread_mv': ('Cell spread / Razlika napona', 'mV'),
     'vehicle_speed_kmh': ('Vehicle speed / Brzina vozila', 'km/h'),
+    'instant_consumption_kwh_100km': ('Instant consumption / Trenutna potrošnja', 'kWh/100 km'),
     'battery_temp_avg_c': ('Battery temperature / Temperatura baterije', '°C'),
     'outside_temp_c': ('Outside temperature / Spoljna temperatura', '°C'),
     'motor_temp_c': ('Motor temperature', '°C'), 'obc_temp_c': ('OBC temperature', '°C'),
@@ -123,6 +127,7 @@ def clean_rows(group):
             if r[k] is not None and not 0 <= r[k] <= 100: r[k] = None
         r['vehicle_speed_kmh'] = fresh(raw,'vehicle_speed_kmh','vehicle_speed_at_ms',15000)
         if r['vehicle_speed_kmh'] is not None and not 0 <= r['vehicle_speed_kmh'] <= 250: r['vehicle_speed_kmh'] = None
+        r['instant_consumption_kwh_100km'] = 100*r['battery_power_kw']/r['vehicle_speed_kmh'] if r['vehicle_speed_kmh'] is not None and r['vehicle_speed_kmh']>=10 and r['battery_power_kw'] is not None else None
         for k in ['cell_voltage_average_v','cell_voltage_min_v','cell_voltage_max_v']:
             r[k] = fresh(raw,k,'bms_extra_at_ms')
         for k in ['outside_temp_c','motor_temp_c','dcdc_temp_c','obc_temp_c','heating_coolant_temp_c','motor_coolant_temp_c','traction_coolant_temp_c']:
@@ -142,8 +147,11 @@ def intervals(rows):
         speed = (a['vehicle_speed_kmh']+b['vehicle_speed_kmh'])/2 if a['vehicle_speed_kmh'] is not None and b['vehicle_speed_kmh'] is not None else None
         hours = dt/3600000
         gross, regen = positive_integral(p,q,hours), positive_integral(-p,-q,hours)
-        result.append(dict(t=a['timestamp_ms'],end=b['timestamp_ms'],ms=dt,net=gross-regen,gross=gross,regen=regen,
+        result.append(dict(t=a['timestamp_ms'],end=b['timestamp_ms'],ms=dt,power0=p,power1=q,net=gross-regen,gross=gross,regen=regen,
             km=speed*hours if speed is not None else None,speed=speed,temp=median([a['outside_temp_c'],b['outside_temp_c']]),
+            speed_min=min(a['vehicle_speed_kmh'],b['vehicle_speed_kmh']) if speed is not None else None,
+            speed_max=max(a['vehicle_speed_kmh'],b['vehicle_speed_kmh']) if speed is not None else None,
+            battery_temp=median([a['battery_temp_avg_c'],b['battery_temp_avg_c']]),
             soc0=a['soc_percent'],soc1=b['soc_percent']))
     return result
 
@@ -161,26 +169,29 @@ def finish_bins(bins):
         v['evidence'] = 'limited / malo podataka' if v['distance_km']<5 else 'observed / izmereno'
     return list(bins.values())
 
-def analyze_group(g):
+def analyze_group(g, conditions=None):
     rows = clean_rows(g); iv = intervals(rows); starts = [r['timestamp_ms'] for r in rows]
     stats = {k:summary(r[k] for r in rows) for k in FIELDS}
     speed_bins, temp_bins = {}, {}
     for x in iv:
         if x['speed'] is None or x['speed']<3 or x['km'] is None: continue
-        low = int(x['speed']//20)*20
-        bins_add(speed_bins,f'{low}–{low+20} km/h',x['net'],x['km'],x['ms'])
+        low = speed_bin(x['speed'])
+        label='120–130 km/h' if low==120 else f'{low}–<{low+10} km/h'
+        bins_add(speed_bins,label,x['net'],x['km'],x['ms'])
         if x['temp'] is not None:
             low = math.floor(x['temp']/5)*5
             bins_add(temp_bins,f'{low}–{low+5} °C',x['net'],x['km'],x['ms'])
-    trips = []
+    trips = []; iv_starts=[x['t'] for x in iv]
     for raw in sorted(g['records']['trip-sessions.jsonl'].values(),key=lambda x:x.get('start',0)):
         start,end = num(raw.get('start')),num(raw.get('end'))
         if not start or not end or end<=start: continue
         pairs = []
-        for x in iv:
+        begin=max(0,bisect.bisect_right(iv_starts,start)-1)
+        finish=bisect.bisect_left(iv_starts,end)
+        for x in iv[begin:finish]:
             overlap = max(0,min(end,x['end'])-max(start,x['t']))
             if overlap: pairs.append((x,overlap/x['ms']))
-        covered = sum(x['ms']*f for x,f in pairs); net = sum(x['net']*f for x,f in pairs)
+        covered = sum(x['ms']*f for x,f in pairs); net = sum(overlap_energy(x,start,end) for x,f in pairs)
         km = sum(x['km']*f for x,f in pairs if x['km'] is not None)
         km_covered = sum(x['ms']*f for x,f in pairs if x['km'] is not None)
         odo0,odo1 = num(raw.get('odo0')),num(raw.get('odo1'))
@@ -231,7 +242,10 @@ def analyze_group(g):
             low_current_samples=len(quiet),low_current_voltage_v=median(r['cell_voltage_average_v'] for r in quiet),
             median_battery_temp_c=median(r['battery_temp_avg_c'] for r in rs)))
     gps = sorted(g['gps'].values(),key=lambda p:p['t'])
-    terrain, wind, route = environment(gps, iv, list(g['records']['weather-samples.jsonl'].values()))
+    env = environment_report(gps, iv, list(g['records']['weather-samples.jsonl'].values()), list(g['records']['trip-sessions.jsonl'].values()))
+    voltage = voltage_analysis(rows,g['bms'])
+    health = health_analysis(rows,num(g['meta'].get('series_groups')))
+    annual = long_term_report(g['profile'],rows,iv,trips,env['segments'],list(g['records']['tire-history.jsonl'].values()),conditions or {})
     charges = []
     for c in g['records']['charge-sessions.jsonl'].values():
         energy = num(c.get('battery_energy_added_kwh')); coverage = num(c.get('power_coverage_percent'))
@@ -261,53 +275,17 @@ def analyze_group(g):
     return dict(profile=g['profile'],name=g['name'],files=g['files'],readings=len(rows),duplicates=g['duplicates'],malformed=g['malformed'],
         start_utc=iso(starts[0]) if starts else '',end_utc=iso(starts[-1]) if starts else '',stats=stats,timeline=timeline,
         trips=trips,cells=cell_rows,probes=probes,soc_bins=soc_bins,daily=daily,speed=finish_bins(speed_bins),
-        temperature=finish_bins(temp_bins),terrain=terrain,wind=wind,route=route,charges=charges,
+        temperature=finish_bins(temp_bins),terrain=env['terrain'],wind=env['wind'],route=env['route'],charges=charges,
+        speed_grade=env['matrix'],wind_pairs=env['wind_pairs'],environment_segments=env['segments'],wind_candidates=env['wind_candidates'],
+        **voltage,**health,**annual,
         charging_gaps=len(g['records']['charge-gaps.jsonl']),untracked=list(g['records']['untracked-intervals.jsonl'].values()),
         gps_points=len(gps),weather_samples=len(g['records']['weather-samples.jsonl']),tire=g['meta'].get('tire_profile',''),
         hvac_recorded=any(any(k in r for k in ['hvac_on','climate_on','ac_on']) for r in rows))
 
 def environment(gps, iv, weather):
-    terrain, wind, segments = {}, {}, []; origin=None; previous=None; travel=0; route=[]
-    iv_starts=[x['t'] for x in iv]
-    weather=sorted([w for w in weather if num(w.get('fetched_at_ms')) is not None],key=lambda w:w['fetched_at_ms'])
-    wt=[w['fetched_at_ms'] for w in weather]
-    for p in gps:
-        if p['accuracy_m'] is None or p['accuracy_m']>30:
-            origin=previous=None; travel=0; continue
-        if previous is None or not 0<p['t']-previous['t']<=20000:
-            origin=previous=p; travel=0; continue
-        km=distance(previous,p)
-        if km/(p['t']-previous['t'])*3600000>200:
-            origin=previous=p; travel=0; continue
-        travel+=km; previous=p
-        if travel<.2: continue
-        start,end=origin['t'],p['t']; cover=energy=0.0
-        i=max(0,bisect.bisect_right(iv_starts,start)-1)
-        while i<len(iv) and iv[i]['t']<end:
-            x=iv[i]; overlap=max(0,min(end,x['end'])-max(start,x['t']))
-            if x['speed'] is not None:
-                cover+=overlap; energy+=x['net']*overlap/x['ms']
-            i+=1
-        if end>start and cover/(end-start)>=.95:
-            grade=None
-            if p['altitude_m'] is not None and origin['altitude_m'] is not None:
-                grade=(p['altitude_m']-origin['altitude_m'])/(travel*1000)*100
-                if abs(grade)<=25:
-                    label='Downhill / Nizbrdo < −1%' if grade < -1 else 'Uphill / Uzbrdo > 1%' if grade>1 else 'Flat / Ravno ±1%'
-                    bins_add(terrain,label,energy,travel,end-start)
-            wi=bisect.bisect_right(wt,start)-1
-            if wi>=0 and 0<=start-wt[wi]<=3600000:
-                w=weather[wi]; speed=num(w.get('wind_speed_10m_kmh')); direction=num(w.get('wind_from_degrees'))
-                if speed is not None and direction is not None and num(w.get('latitude')) is not None and num(w.get('longitude')) is not None and distance(origin,w)<=50:
-                    la,lb=math.radians(origin['latitude']),math.radians(p['latitude']); dl=math.radians(p['longitude']-origin['longitude'])
-                    bearing=math.degrees(math.atan2(math.sin(dl)*math.cos(lb),math.cos(la)*math.sin(lb)-math.sin(la)*math.cos(lb)*math.cos(dl)))
-                    head=speed*math.cos(math.radians(direction-bearing))
-                    label='Headwind / Čeoni > 5 km/h' if head>5 else 'Tailwind / Leđni < −5 km/h' if head< -5 else 'Cross/light / Bočni/slab'
-                    bins_add(wind,label,energy,travel,end-start)
-            segments.append(dict(t=start,end=end,km=travel,grade=grade,net_kwh=energy))
-        route.append(dict(t=p['t'],lat=p['latitude'],lon=p['longitude'],alt=p['altitude_m']))
-        origin=p;travel=0
-    return finish_bins(terrain),finish_bins(wind),route
+    result = environment_report(gps, iv, weather)
+    return result["terrain"], result["wind"], result["route"]
+
 
 def write_csv(path, rows):
     if not rows: return
@@ -318,16 +296,22 @@ def write_csv(path, rows):
             safe={k: ("'"+v if isinstance(v,str) and v.startswith(('=','+','-','@')) else v) for k,v in row.items()}
             writer.writerow(safe)
 
-def run(paths, destination):
-    groups=load_exports(paths); report=[analyze_group(g) for g in groups.values() if g['bms']]
+def run(paths, destination, conditions_path=None):
+    config=load_conditions(conditions_path)
+    groups=load_exports(paths); report=[analyze_group(g,config) for g in groups.values() if g['bms']]
     destination=Path(destination); destination.mkdir(parents=True,exist_ok=True)
-    payload=dict(version=VERSION,created_utc=datetime.now(timezone.utc).isoformat(),fields=FIELDS,vehicles=report)
     base=Path(getattr(sys,'_MEIPASS',Path(__file__).resolve().parent))
+    payload=dict(version=VERSION,created_utc=datetime.now(timezone.utc).isoformat(),fields=FIELDS,vehicles=report,references=references(),
+        aging_research=json.loads((base/'aging_research.json').read_text(encoding='utf-8')))
     template=(base/'report.html').read_text(encoding='utf-8')
+    template=template.replace('__REPORT_CSS__',(base/'report.css').read_text(encoding='utf-8')).replace('__REPORT_JS__',(base/'report.js').read_text(encoding='utf-8'))
     data=json.dumps(payload,ensure_ascii=False,allow_nan=False).replace('<','\\u003c').replace('>','\\u003e').replace('&','\\u0026')
     output=destination/'report.html'; output.write_text(template.replace('__REPORT_DATA__',data),encoding='utf-8')
     for index,g in enumerate(report,1):
-        for key in ['trips','cells','probes','soc_bins','daily','speed','temperature','terrain','wind','charges']:
+        for key in ['trips','cells','probes','soc_bins','daily','speed','temperature','terrain','wind','charges',
+                    'soc_readings','soc_pairs','soc_medians','speed_grade','wind_pairs','environment_segments',
+                    'health_daily','health_groups','health_group_daily','soc_conditions','soc_endpoints',
+                    'monthly','conditions','condition_matches','condition_pairs','cycle_intervals']:
             write_csv(destination/f'vehicle-{index}-{key}.csv',g[key])
     (destination/'summary.json').write_text(json.dumps(payload,ensure_ascii=False,allow_nan=False,indent=2),encoding='utf-8')
     return output
@@ -335,6 +319,7 @@ def run(paths, destination):
 def main():
     parser=argparse.ArgumentParser(description='Offline Battery Lab ZIP analysis')
     parser.add_argument('exports',nargs='+',type=Path); parser.add_argument('-o','--output',type=Path,required=True)
-    args=parser.parse_args(); print(run(args.exports,args.output))
+    parser.add_argument('--conditions',type=Path,help='Dated tire/HVAC periods and fixed initial energy references (JSON)')
+    args=parser.parse_args(); print(run(args.exports,args.output,args.conditions))
 
 if __name__=='__main__': main()

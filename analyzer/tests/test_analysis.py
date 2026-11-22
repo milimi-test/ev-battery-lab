@@ -70,9 +70,12 @@ class AnalysisTests(unittest.TestCase):
         gps=[dict(t=T+i*10000,latitude=44+i*.001,longitude=20,altitude_m=100,accuracy_m=5) for i in range(5)]
         iv=[dict(t=T+i*10000,end=T+(i+1)*10000,ms=10000,net=.05,speed=40) for i in range(4)]
         weather=[dict(fetched_at_ms=T,latitude=44,longitude=20,wind_speed_10m_kmh=20,wind_from_degrees=0)]
-        terrain,wind,route=environment(gps,iv,weather)
-        self.assertIn('Flat',terrain[0]['group']);self.assertIn('Headwind',wind[0]['group'])
-        self.assertAlmostEqual(terrain[0]['net_kwh'],.2)
+        from comparisons import environment_report
+        result=environment_report(gps,iv,weather)
+        self.assertIn('Flat',result['terrain'][0]['group'])
+        self.assertAlmostEqual(result['terrain'][0]['net_kwh'],.15)
+        self.assertAlmostEqual(result['segments'][0]['headwind_kmh'],20)
+        self.assertTrue(all(w['paired_delta'] is None for w in result['wind']))
 
     def test_charging_loss_only_complete_linked_session(self):
         with tempfile.TemporaryDirectory() as folder:

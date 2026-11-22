@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Gailani et al. (2020) · NMC cycle-life experiment",
+    "url": "https://arxiv.org/abs/2007.01937",
+    "finding": "Samsung NMC: 80% SOH after 3,000 test cycles at 35 °C and 75% depth of discharge. / Samsung NMC: 80% SOH posle 3.000 ciklusa pri 35 °C i 75% dubine pražnjenja.",
+    "limit": "A different cell and a specified protocol; test cycles are not automatically full energy-equivalent cycles or an e-208 lifetime prediction. / Druga ćelija i protokol, ne prognoza veka e-208."
+  },
+  {
+    "title": "Luh & Blank (2024) · NMC/C-SiO aging dataset",
+    "url": "https://doi.org/10.1038/s41597-024-03831-x",
+    "finding": "228 cells across 76 aging conditions, including calendar, cycling and driving profiles, 0–40 °C. / 228 ćelija, 76 uslova starenja, kalendarsko i ciklično starenje i profili vožnje, 0–40 °C.",
+    "limit": "Useful for studying how conditions change aging, not a validated CATL calibration for this vehicle. / Pokazuje važnost uslova; nije potvrđen CATL model ovog vozila."
+  },
+  {
+    "title": "NREL / Journal of The Electrochemical Society (2022), 169 080518",
+    "url": "https://www.nrel.gov/docs/fy22osti/82648.pdf",
+    "finding": "Aging models distinguish calendar time and cumulative cycling throughput; Ah-based EFC may use total charge throughput divided by twice nominal Ah. / Razlikuje kalendarsko vreme i protok naelektrisanja; Ah-EFC može koristiti ukupni protok podeljen sa 2 × nominalni Ah.",
+    "limit": "This report separately labels its discharge-kWh / fixed initial-kWh measure as energy-equivalent cycles. It is not the same metric as Ah-based EFC. / Energetski ekvivalent iz ovog izveštaja nije isto što i Ah-EFC."
+  }
+]

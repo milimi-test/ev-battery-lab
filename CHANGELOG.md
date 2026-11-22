@@ -1,5 +1,18 @@
 # Releases / Izdanja
 
+## Analyzer 0.2 — 2026-11-22
+
+- Report-first layout: combined measurements, global parameters, recorded pack/group SOH changes, optional trips and long-trip filters; earlier/latest dates have different colors.
+- Physical-unit signal panels with a shared cursor, pinned readings, and two-axis overlay; speed/power/instant consumption preset.
+- Every SOC/voltage snapshot in a paginated table and CSV; time-aligned unique pairs, 1 pp medians, quartiles and three sourced laboratory reference curves.
+- Separate vehicle/test SOC charts; 4.200 V comparison marker, per-reference full/empty endpoints, voltage-to-test-SOC lookup and monthly temperature/load comparison. No unverified vehicle buffer claims.
+- 10 km/h × five-grade consumption matrix through 130 km/h with distances and evidence counts.
+- Monthly/year-filtered reporting, dated tire/HVAC editor, descriptive conditions and matched winter/summer, temperature, rain/snow and HVAC comparisons.
+- Fixed-reference energy-equivalent cycles, suspicious counter-decrease handling, reference retained-energy table and linked aging research.
+- Wind comparisons require one-to-one matching of level road segments, similar speed, location/direction, temperatures, SOC and precipitation, with explicit minimum evidence; insufficient comparisons remain blank.
+- English-first/Serbian-second motivation and documentation, report screenshots, portable Windows build script.
+
+
 ## Analyzer 0.1 — 2026-11-21
 
 Portable Windows export analyser with multi-ZIP deduplication, vehicle separation, interactive offline HTML reports, CSV tables, cell/probe summaries, trip coverage, effective capacity estimates, SOC/voltage bins, consumption by speed/temperature/grade/modelled wind, route/elevation sketches and linked charging-meter loss estimates. Eight focused calculation/import tests passed; existing measurement exports and chart interaction were checked locally. Personal test reports are not published.

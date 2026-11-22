@@ -9,7 +9,7 @@ VERSION='0.22'
 def main():
     output=ROOT/f'battery-lab-source-{VERSION}.zip'
     files=[]
-    for folder in ['app/src','gradle','tools','analyzer','.github']:
+    for folder in ['app/src','gradle','tools','analyzer','.github','docs']:
         for f in (ROOT/folder).rglob('*'):
             if not f.is_file() or any(p in f.parts for p in ['__pycache__','reports','dist','build']):continue
             if f.suffix in ['.bak','.pbf','.sqlite','.writing','.tmp']:continue

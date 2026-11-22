@@ -1,13 +1,14 @@
 """Windows desktop entry point. Data stays on this computer."""
-import sys, threading, webbrowser
+import sys, threading, webbrowser, json, zipfile
 from pathlib import Path
 from datetime import datetime
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 from analyze import run, VERSION
+from conditions_editor import edit_conditions
 
 def main():
-    root=tk.Tk(); root.title('Battery Lab Analyzer '+VERSION); root.geometry('850x620'); root.minsize(680,500)
+    root=tk.Tk(); root.title('Battery Lab Analyzer '+VERSION); root.geometry('900x730'); root.minsize(760,650)
     root.configure(bg='#08131f'); style=ttk.Style(); style.theme_use('clam')
     style.configure('TFrame',background='#08131f'); style.configure('TLabel',background='#08131f',foreground='#eaf6ff',font=('Segoe UI',11))
     style.configure('Title.TLabel',font=('Segoe UI',26,'bold'),foreground='#40dcf0')
@@ -31,15 +32,31 @@ def main():
         selected=filedialog.askdirectory()
         if selected: destination.set(selected)
     ttk.Button(folder,text='Browse / Izaberi',command=choose).pack(side='right',padx=(8,0))
+    context=tk.StringVar(value=str(Path.home()/'Documents'/'Battery Lab Reports'/'conditions.json'))
+    ttk.Label(frame,text='Optional dated tires / HVAC context · Periodi guma i klime (opciono)').pack(anchor='w')
+    context_row=ttk.Frame(frame);context_row.pack(fill='x',pady=8)
+    ttk.Entry(context_row,textvariable=context).pack(side='left',fill='x',expand=True)
+    def edit_context():
+        profiles=[]
+        try:
+            for name in files:
+                with zipfile.ZipFile(name) as z:
+                    info=json.loads(z.read('manifest.json')) if 'manifest.json' in z.namelist() else {}
+                    p=info.get('vehicle_profile') or 'legacy-e208'
+                    if p not in profiles:profiles.append(p)
+            edit_conditions(root,context.get(),profiles)
+        except Exception as e:messagebox.showerror('Conditions / Uslovi',str(e))
+    ttk.Button(context_row,text='Edit / Uredi',command=edit_context).pack(side='right',padx=(8,0))
     status=tk.StringVar(value='Offline · Original ZIPs remain unchanged / Originali ostaju neizmenjeni')
     ttk.Label(frame,textvariable=status,wraplength=740).pack(anchor='w',pady=10)
     def start():
         if not files: messagebox.showinfo('Select exports','Add at least one ZIP / Dodaj bar jedan ZIP.');return
         selected=list(files);target=Path(destination.get())/datetime.now().strftime('report-%Y%m%d-%H%M%S-%f')
+        context_file=Path(context.get()) if context.get().strip() and Path(context.get()).is_file() else None
         action.configure(state='disabled');status.set('Analysing… / Analiza je u toku…')
         def worker():
             try:
-                report=run(selected,target)
+                report=run(selected,target,context_file)
                 root.after(0,lambda:done(report,None))
             except Exception as error: root.after(0,lambda msg=str(error):done(None,msg))
         threading.Thread(target=worker,daemon=True).start()

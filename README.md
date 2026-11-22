@@ -6,6 +6,22 @@ Android battery monitoring for Peugeot/Stellantis e-CMP and Renault Zoe, with a 
 
 ## English
 
+### Why this project exists
+
+Battery Lab began as an owner's investigation of battery voltage and health in a Peugeot e-208. The dashboard percentage did not seem consistent with the voltages being observed. The initial hypothesis was: **could 100% on the dashboard correspond to roughly 80% on a cell reference curve?**
+
+The program was built to record actual OBD readings, follow pack and cell-group voltages, track recorded SOH changes and compare measurements over time. That hypothesis is a **research question, not a verified claim about Peugeot/CATL SOC or hidden buffers**. A reference from another chemistry/cell, temperature or test method cannot establish this car's absolute SOC. The report shows raw observations, medians, external test references and the limits of each comparison.
+
+### Report screenshots
+
+The report starts with all measurements together; individual and longer trips are optional. Earlier dates are amber, the latest recorded day is teal. These screenshots show aggregate battery/report views; raw exports and GPS routes are not published.
+
+![Report overview](docs/screenshots/analyzer-overview.jpg)
+![Measured SOC and voltage versus laboratory references](docs/screenshots/analyzer-soc.jpg)
+![Consumption matrix in 10 km/h bins](docs/screenshots/analyzer-matrix.jpg)
+![Aligned signal charts with physical units](docs/screenshots/analyzer-signals.jpg)
+![Long-term consumption and conditions](docs/screenshots/analyzer-annual.jpg)
+
 ### What it does
 
 - Reads actual battery data through a compatible Bluetooth OBD adapter: SOC, pack SOH, voltage, current, power, available energy and supported cell-group voltages/temperature probes.
@@ -13,7 +29,7 @@ Android battery monitoring for Peugeot/Stellantis e-CMP and Renault Zoe, with a 
 - Provides offline satellite/terrain maps of Serbia and neighbouring areas, streets, contours, charging locations and road-route planning within the packaged routing coverage.
 - Estimates charging time and driving range with an adjustable arrival reserve. Voltage-based SOC models are comparisons, not a verified CATL calibration or a measurement of hidden battery buffers.
 - Keeps histories and adapter settings separate by vehicle profile. English is the default; Serbian is selectable under **More → Settings → Language / Jezik**.
-- Exports measurement ZIPs for the separate offline desktop analyser. The analyser produces an interactive HTML report and CSV tables without uploading the ZIP.
+- Exports measurement ZIPs for the separate offline desktop analyser. The analyser produces an interactive HTML report and CSV tables without uploading the ZIP, with monthly trends, dated tire/HVAC context, matched conditions, separate vehicle/test SOC scales and energy-equivalent cycling history.
 
 ### Vehicle profiles
 
@@ -27,7 +43,7 @@ These are **15 implemented profiles**, not a claim that every variant has been t
 
 ### Install and connect
 
-1. Download `e208-battery-lab-0.22.apk` from [Releases](https://github.com/milimi-test/ev-battery-lab/releases/latest), copy it to an **Android 8+** phone and open it. Allow APK installation for the app you use to open the file if Android requests it.
+1. Download `e208-battery-lab-0.22.apk` from [Android 0.22](https://github.com/milimi-test/ev-battery-lab/releases/tag/v0.22), copy it to an **Android 8+** phone and open it. Allow APK installation for the app you use to open the file if Android requests it.
 2. Select your vehicle on the home screen. Pair the compatible Bluetooth adapter in Android settings, then select it in Battery Lab. Development used a Vgate iCar Pro 2S; adapters differ in support for long ISO-TP replies.
 3. Allow Bluetooth and precise location access when prompted. Close any other app holding the adapter connection. Turn on the vehicle and connect.
 4. The recording switch controls storage. The bulb keeps the screen awake. The power button stops monitoring and exits. GPS is tied to monitoring/trip state.
@@ -43,7 +59,7 @@ Range rings are straight-line estimates, while road routes are longer and affect
 
 ### Build, customize and contribute
 
-Use **JDK 17 / Android SDK 35** and the included Gradle Wrapper. For a Git clone or GitHub code ZIP, first download the APK and `SHA256SUMS.txt` from Releases and restore its offline map assets (Python 3.11+):
+Use **JDK 17 / Android SDK 35** and the included Gradle Wrapper. For a Git clone or GitHub code ZIP, first download the APK and `SHA256SUMS.txt` from [Android 0.22](https://github.com/milimi-test/ev-battery-lab/releases/tag/v0.22) and restore its offline map assets (Python 3.11+):
 
 ```powershell
 python tools/restore_offline_assets.py e208-battery-lab-0.22.apk --checksums SHA256SUMS.txt
@@ -65,6 +81,14 @@ Output: `app/build/outputs/apk/debug/app-debug.apk`. Large map assets are distri
 
 ## Srpski
 
+### Zašto je program nastao
+
+Program je nastao za praćenje napona i stanja baterije Peugeota e-208, jer je vlasniku procenat prikazan na instrument tabli delovao nelogično u odnosu na očitane napone. Polazna sumnja bila je: **da li 100% na tabli zapravo odgovara približno 80% na referentnoj krivoj ćelije?**
+
+Cilj je da se to proverava stvarnim OBD merenjima, praćenjem napona paketa i ćelijskih grupa, očitanog SOH i promena kroz vreme. **Ovo je hipoteza, a ne potvrđen podatak o Peugeot/CATL bateriji ili njenim baferima.** Krive drugih ćelija i laboratorijskih ispitivanja služe poređenju; nisu fabrička kalibracija konkretnog automobila.
+
+Analizator 0.2 prvo prikazuje zbirni izveštaj svih merenja, a zatim omogućava pregled pojedinačnih ili dužih vožnji. Sadrži sve SOC/napon zapise, medijane, matricu potrošnje na svakih 10 km/h i poređenje vetra samo kada postoje dovoljno slični segmenti. Raniji datumi su narandžasti, poslednji dan tirkizan. Slike iznad prikazuju zbirne podatke; privatne GPS putanje i ZIP merenja nisu objavljeni.
+
 ### Šta aplikacija radi
 
 Battery Lab čita stvarne OBD podatke baterije, snima vožnje i punjenja, prikazuje GPS putanju, grafikone, temperature i podržane napone ćelijskih grupa. Ima offline mape Srbije i okruženja, punjače, planiranje rute, procenu dometa i vremena punjenja. Windows program **Battery Lab Analyzer** iz ZIP izvoza pravi lokalni HTML izveštaj i CSV tabele.
@@ -73,7 +97,7 @@ Uključeno je **15 profila**: šest Stellantis modela sa baterijom 50 kWh i deve
 
 ### Instalacija i upotreba
 
-1. Preuzmi **APK 0.22** iz [Releases](https://github.com/milimi-test/ev-battery-lab/releases/latest) i instaliraj na Android 8 ili noviji.
+1. Preuzmi **APK 0.22** iz [Android izdanja](https://github.com/milimi-test/ev-battery-lab/releases/tag/v0.22) i instaliraj na Android 8 ili noviji.
 2. Izaberi stvarni model/generaciju i bateriju, upari Bluetooth OBD adapter i izaberi ga u aplikaciji. Zatvori drugu aplikaciju koja koristi adapter. Za razvoj je korišćen Vgate iCar Pro 2S.
 3. Dozvoli Bluetooth i preciznu lokaciju. Uključi vozilo i poveži se. Prekidač snimanja uključuje čuvanje, lampica drži ekran budnim, a dugme za isključivanje zaustavlja nadzor i izlazi.
 4. Srpski biraš u **More → Settings → Language / Jezik**. Izvezi ZIP iz podešavanja i otvori ga desktop analizatorom. Izaberi više izvoza za dugoročni pregled; ponovljeni zapisi se spajaju.
